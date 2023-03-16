@@ -24,7 +24,10 @@ result is True. In the COVID-19 example, this represents how confident a
 doctor is that a person has contracted the virus. In the picture to the
 right, negative results are blue and positive results are red.
 
-![image](sigmoid1.png)
+<p align="center">
+      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Binomial%20Logistic%20Regression/sigmoid1.png' alt='Sigmoid Curve'/>
+<p align="center"><em>Image by Author</em></p>
+</p>
 
 ## The Process
 To do binomial logistic regression, we will need to do a variety of
@@ -229,7 +232,10 @@ plt.scatter(red_x, red_y, color="red")
 plt.show()
 ```
 
-![image](output_sigmoid.png)
+<p align="center">
+      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Binomial%20Logistic%20Regression/output_sigmoid.png' alt='Resulting Sigmoid.'/>
+<p align="center"><em>Image by Author</em></p>
+</p>
 
 ## Limitations
 One of the biggest problems with binary classification is the need for a
@@ -246,7 +252,10 @@ the model incorrectly predicted the positive class. The overhanging blue
 dots are called **false negatives**---areas in which the model
 incorrectly predicted the negative class.
 
-![image](sigmoid2.png)
+<p align="center">
+      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Binomial%20Logistic%20Regression/sigmoid2.png' alt='Sigmoid showing false positives and negatives.'/>
+<p align="center"><em>Image by Author</em></p>
+</p>
 
 ## Conclusion
 A successful binomial logistic regression model will have reduced the
