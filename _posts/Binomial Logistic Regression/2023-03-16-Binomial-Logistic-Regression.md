@@ -38,7 +38,7 @@ The first step of our logistic regression problem is to create the
 training datset. First, we should set a seed to ensure the
 reproducibility of our random data.
 
-``` {.python firstline="1" lastline="9"}
+``` python
 import numpy as np
 import matplotlib.pyplot as plt
 import torch
@@ -53,7 +53,7 @@ We must use a linear model from PyTorch because we are dealing with one
 input, $x$, and one output, $y$. Therefore, our model is linear. To do
 this, we will use PyTorch's `Linear` function:\
 
-``` {.python firstline="10" lastline="11"}
+``` python
 model = Linear(in_features=1, out_features=1) # use a linear model
 ```
 
@@ -64,7 +64,7 @@ the blue points represent a negative COVID-19 test, so they will all be
 0. For the red points, they represent a positive COVID-19 test, so they
 will be 1. Below is the code and its output:\
 
-``` {.python firstline="12" lastline="19"}
+``` python
 blue_x = (torch.rand(20) * 7).reshape(-1,1)   # random floats between 0 and 7
 blue_y = torch.zeros(20).reshape(-1,1)
 
@@ -77,7 +77,7 @@ Y = torch.vstack([blue_y, red_y])   # matrix of y values
 
 Now, our code should look like this:
 
-``` {.python firstline="1" lastline="19"}
+``` python
 import numpy as np
 import matplotlib.pyplot as plt
 import torch
@@ -113,7 +113,7 @@ criterion, and Stochastic Gradient Descent as our means of optimizing
 it. Since this is the function we'll be optimizing, we need to pass in
 the model parameters and a learning rate.
 
-``` {.python firstline="21" lastline="24"}
+``` python
 epochs = 2000   # run 2000 iterations
 criterion = nn.BCELoss()    # implement binary cross entropy loss function
 
@@ -137,7 +137,7 @@ To find the optimal slope and intercept, we are essentially training our
 model. We must apply gradient descent for a number of iterations, or
 **epochs**. In this example, we'll use 1,000 epochs to demonstrate.\
 
-``` {.python firstline="21" lastline="37"}
+``` python
 epochs = 2000   # run 2000 iterations
 criterion = nn.BCELoss()    # implement binary cross entropy loss function
 
@@ -202,7 +202,7 @@ for i in range(epochs):
 
 Final output after two thousand epochs:
 
-``` {style="output"}
+```
 epoch: 2000
 loss:  0.53861
 slope:  0.61276
