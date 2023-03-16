@@ -6,7 +6,8 @@ models for handling classification problems. **Binomial Logistic
 Regression** is just one type of logistic regression model. It refers to
 the classification of two variables where a probability is used to
 determine a binary outcome, hence the "bi" in "binomial." The outcome is
-either True or False---0 or 1.\
+either True or False---0 or 1.
+
 An example of binomial logistic regression is predicting the likelihood
 of COVID-19 within a population. A person either has COVID-19 or they
 don't, and a threshold must be established to distinguish these results
@@ -16,11 +17,12 @@ as accurately as possible.
 ## Sigmoig Function
 These predictions are not fit to a line, as is the case with linear
 regression models. Instead, logistic regression models are fit to a
-**sigmoid** function, shown to the right.\
+**sigmoid** function, shown to the right.
+
 For each $x$, the resulting $y$ value represents the probability that a
 result is True. In the COVID-19 example, this represents how confident a
 doctor is that a person has contracted the virus. In the picture to the
-right, negative results are blue and positive results are red.\
+right, negative results are blue and positive results are red.
 
 ![image](sigmoid1.png)
 
@@ -51,7 +53,7 @@ torch.manual_seed(42)   # set a random seed
 
 We must use a linear model from PyTorch because we are dealing with one
 input, $x$, and one output, $y$. Therefore, our model is linear. To do
-this, we will use PyTorch's `Linear` function:\
+this, we will use PyTorch's `Linear` function:
 
 ``` python
 model = Linear(in_features=1, out_features=1) # use a linear model
@@ -62,7 +64,7 @@ them from a row vector to a column vector. The blue ones will be between
 0 and 7, and the red ones will be between 7 and 10. For the $y$ values,
 the blue points represent a negative COVID-19 test, so they will all be
 0. For the red points, they represent a positive COVID-19 test, so they
-will be 1. Below is the code and its output:\
+will be 1. Below is the code and its output:
 
 ``` python
 blue_x = (torch.rand(20) * 7).reshape(-1,1)   # random floats between 0 and 7
@@ -104,10 +106,12 @@ We will be using the process of gradient descent to optimize the loss of
 our sigmoid function. The loss is calculated based on how well the
 function fits the data, which is governed by the slope and intercept of
 the sigmoid curve. We need gradient descent to find the optimal slope
-and intercept.\
+and intercept.
+
 We will also use **Binary Cross Entropy** (BCE) as our loss function, or
 the log loss function. For logistic regression in general, loss
-functions that do not incorporate logrithms will not work.\
+functions that do not incorporate logrithms will not work.
+
 To implement BCE as our loss function, we will set this up as our
 criterion, and Stochastic Gradient Descent as our means of optimizing
 it. Since this is the function we'll be optimizing, we need to pass in
@@ -135,7 +139,7 @@ store our new slope and intercept for the next iteration.
 ## Finishing Up
 To find the optimal slope and intercept, we are essentially training our
 model. We must apply gradient descent for a number of iterations, or
-**epochs**. In this example, we'll use 1,000 epochs to demonstrate.\
+**epochs**. In this example, we'll use 1,000 epochs to demonstrate.
 
 ``` python
 epochs = 2000   # run 2000 iterations
@@ -232,11 +236,12 @@ plt.show()
 One of the biggest problems with binary classification is the need for a
 threshold. In the case of logistic regression, this threshold should be
 at the value of $x$ where $y$ is at 50%. The question we're trying to
-answer is where to put the threshold?\
+answer is where to put the threshold?
 
 In the case of COVID-19 testing, the original example illustrates this
 dilemma. If we put our threshold at $x=5$, we can clearly see blue dots
-that should be red, and red dots that should be blue.\
+that should be red, and red dots that should be blue.
+
 The overhanging red dots are called **false positives**---areas in which
 the model incorrectly predicted the positive class. The overhanging blue
 dots are called **false negatives**---areas in which the model
@@ -248,6 +253,8 @@ incorrectly predicted the negative class.
 A successful binomial logistic regression model will have reduced the
 amount of false negatives, as these often cause the most danger. Having
 COVID-19 but testing negative is a serious risk to the health and safety
-of others. By using Binomial Logistic Regression on the data available,
+of others. 
+
+By using Binomial Logistic Regression on the data available,
 we can determine the optimal place to put our threshold, and thus help
 to reduce uncertainty and make more informed decisions.
