@@ -14,7 +14,7 @@ don't, and a threshold must be established to distinguish these results
 as accurately as possible.
 
 
-## Sigmoig Function
+## Sigmoid Function
 These predictions are not fit to a line, as is the case with linear
 regression models. Instead, logistic regression models are fit to a
 **sigmoid** function, shown to the right.
