@@ -47,7 +47,6 @@ import torch
 import torch.nn as nn
 from torch.nn import Linear
 
-
 torch.manual_seed(42)   # set a random seed
 ```
 
@@ -85,7 +84,6 @@ import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 from torch.nn import Linear
-
 
 torch.manual_seed(42)   # set a random seed
 
@@ -130,11 +128,13 @@ data into the sigmoid function, calculate the loss, and find the
 gradient of the loss function. Then, we must make a step, making sure to
 store our new slope and intercept for the next iteration.
 
-    optimizer.zero_grad()
-    Yhat = torch.sigmoid(model(X)) 
-    loss = criterion(Yhat,Y)
-    loss.backward()
-    optimizer.step()
+``` python
+optimizer.zero_grad()
+Yhat = torch.sigmoid(model(X)) 
+loss = criterion(Yhat,Y)
+loss.backward()
+optimizer.step()
+```
 
 ## Finishing Up
 To find the optimal slope and intercept, we are essentially training our
@@ -170,7 +170,6 @@ import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 from torch.nn import Linear
-
 
 torch.manual_seed(42)   # set a random seed
 
