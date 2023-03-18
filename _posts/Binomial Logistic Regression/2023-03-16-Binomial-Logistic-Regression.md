@@ -144,7 +144,7 @@ optimizer.step()
 ### **Finishing Up**
 To find the optimal slope and intercept, we are essentially training our
 model. We must apply gradient descent for a number of iterations, or
-**epochs**. In this example, we'll use 1,000 epochs to demonstrate.
+**epochs**. In this example, we'll use 2,000 epochs to demonstrate.
 
 ``` python
 epochs = 2000   # run 2000 iterations
