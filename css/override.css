@@ -8,6 +8,10 @@ hr {
   display: flex;
 }
 
+.post-content {
+  width: 75%;
+}
+
 .post_navi-label {
   font-size: 0.8em;
   opacity: 0.5;
