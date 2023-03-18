@@ -2,7 +2,7 @@
 layout: page
 title: About Me
 ---
-<img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/profile_pic.jpg"  width="50%" height="50%">
+<img align="left" src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/profile_pic.jpg"  width="50%" height="50%">
 
 Hello! My name is Steven Lasch, and I am a junior at Mercyhurst University studying data science with a minor in Religious Studies. I have many interests, including a love of the outdoors, hiking and road biking, playing guitar and piano, and studying languages and writing systems. 
 
