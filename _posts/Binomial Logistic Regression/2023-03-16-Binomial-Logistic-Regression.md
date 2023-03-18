@@ -1,6 +1,6 @@
 # Binomial Logistic Regression
 
-## About
+### **About**
 Logistic Regression models are one of the most common machine learning
 models for handling classification problems. **Binomial Logistic
 Regression** is just one type of logistic regression model. It refers to
@@ -14,7 +14,7 @@ don't, and a threshold must be established to distinguish these results
 as accurately as possible.
 
 
-## Sigmoid Function
+### **Sigmoid Function**
 These predictions are not fit to a line, as is the case with linear
 regression models. Instead, logistic regression models are fit to a
 **sigmoid** function, shown to the right.
@@ -29,7 +29,7 @@ right, negative results are blue and positive results are red.
 <p align="center"><em>Image by Author</em></p>
 </p>
 
-## The Process
+### **The Process**
 To do binomial logistic regression, we will need to do a variety of
 things:
 
@@ -102,7 +102,7 @@ X = torch.vstack([blue_x, red_x])   # matrix of x values
 Y = torch.vstack([blue_y, red_y])   # matrix of y values
 ```
 
-## Optimization
+### **Optimization**
 We will be using the process of gradient descent to optimize the loss of
 our sigmoid function. The loss is calculated based on how well the
 function fits the data, which is governed by the slope and intercept of
@@ -139,7 +139,7 @@ loss.backward()
 optimizer.step()
 ```
 
-## Finishing Up
+### **Finishing Up**
 To find the optimal slope and intercept, we are essentially training our
 model. We must apply gradient descent for a number of iterations, or
 **epochs**. In this example, we'll use 1,000 epochs to demonstrate.
@@ -215,7 +215,7 @@ slope:  0.61276
 intercept: -3.17314
 ```
 
-## Visualization
+### **Visualization**
 And finally, we can plot the data along with the sigmoid function to get
 the following visualization:
 
@@ -237,7 +237,7 @@ plt.show()
 <p align="center"><em>Image by Author</em></p>
 </p>
 
-## Limitations
+### **Limitations**
 One of the biggest problems with binary classification is the need for a
 threshold. In the case of logistic regression, this threshold should be
 at the value of $x$ where $y$ is at 50%. The question we're trying to
@@ -257,7 +257,7 @@ incorrectly predicted the negative class.
 <p align="center"><em>Image by Author</em></p>
 </p>
 
-## Conclusion
+### **Conclusion**
 A successful binomial logistic regression model will have reduced the
 amount of false negatives, as these often cause the most danger. Having
 COVID-19 but testing negative is a serious risk to the health and safety
