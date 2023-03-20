@@ -1,5 +1,1 @@
-Here you can say lots of fun things about your site.
-
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+This blog will be used to post various research topics including natural language processing, regression, and likely any other areas of research that I find interesting. 
