@@ -1,3 +1,8 @@
+---
+layout: title
+page: Presentations
+---
+
 # IEEE Student Symposium, 2023
 ### Gannon University, Erie, PA
 
