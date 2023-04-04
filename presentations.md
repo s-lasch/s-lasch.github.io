@@ -1,6 +1,6 @@
 ---
-layout: title
-page: Presentations
+layout: page
+title: Presentations
 ---
 
 # IEEE Student Symposium, 2023
