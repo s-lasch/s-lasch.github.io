@@ -8,5 +8,5 @@ title: Presentations
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/ieee_presentation_image.jpg" alt="IEEE Poster Presentation" style="width:60%"/>
-<p align="center">IEEE Poster Presentation April 3, 2023</p>
+<p align="center">ASL to English Translation Poster Presentation April 3, 2023</p>
 </p>
