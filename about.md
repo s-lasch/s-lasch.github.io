@@ -4,8 +4,8 @@ title: About Me
 ---
 <img align="left" style="padding: 0px 20px 0px 0px;" src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/profile_pic.jpg"  width="30%" height="30%">
 
-Hello! My name is Steven Lasch, and I am a junior at Mercyhurst University studying data science with a minor in Religious Studies. I have many interests, including a love of the outdoors, hiking and road biking, playing guitar and piano, and studying languages and writing systems. 
+Hello! My name is Steven Lasch, and I am currently a junior at Mercyhurst University, where I am studying data science with a minor in religious studies. I have always had a diverse range of interests, including languages, spending time outdoors, hiking, road biking, and playing music on my guitar and piano.
 
-I also enjoy programming, and this has led me to incorporate my interest in language to my major, in the form of natural language processing. Around campus, I am also a computer science tutor, former writing consultant, and active member of Campus Ministry. 
+My love for programming and fascination with language led me to incorporate natural language processing into my major. I find it exciting to be able to use technology to analyze and interpret language. As a computer science tutor and former writing consultant on campus, I have gained valuable insights into the use of language in an academic environment, specifically for writing research papers.
 
-Thank you for checking out my site!
+Around campus you could find me in the Campus Ministry lounge, or in any of the Data Science labs under the library. Thank you for taking the time to visit my site and learn a little more about me!
