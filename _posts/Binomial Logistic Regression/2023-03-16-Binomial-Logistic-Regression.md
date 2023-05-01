@@ -1,5 +1,5 @@
 ---
-tags: Logistic Regression
+tag: Logistic Regression
 title: Binomial Logistic Regression
 ---
 
