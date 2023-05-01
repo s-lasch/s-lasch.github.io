@@ -1,3 +1,8 @@
+---
+tags: Logistic Regression
+title: Binomial Logistic Regression
+---
+
 # Binomial Logistic Regression
 
 ### **About**
