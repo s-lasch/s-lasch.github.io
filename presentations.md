@@ -3,8 +3,8 @@ layout: page
 title: Presentations
 ---
 
-## Illumination Student Scholarship, 2023
-### *Mercyhurst University, Erie, PA*
+### **Illumination Student Scholarship, 2023**
+#### *Mercyhurst University, Erie, PA*
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/illumination.jpg" alt="Illumination Poster Presentation" style="width:60%"/>
@@ -13,8 +13,8 @@ title: Presentations
 
 ---
 
-## IEEE Student Symposium, 2023
-### *Gannon University, Erie, PA*
+### **IEEE Student Symposium, 2023**
+#### *Gannon University, Erie, PA*
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/ieee_presentation_image.jpg" alt="IEEE Poster Presentation" style="width:60%"/>
