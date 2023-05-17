@@ -23,8 +23,11 @@ Below is the mathematics behind multinomial logistic regression. These equations
 
 From these equations, we can simplify to the ones below, which are alternate forms of the equations we saw earlier. They are derived from the fact that the probabilities of all $K$ classes must sum to 1. In these equations, $\text{P}(Y_i = K)$ is used as a reference category, and the probabilities of the other $K-1$ categories are expressed relative to this reference category using exponential functions of the predictor variable $X_i$ and the corresponding coefficient $\beta_K$.
 
-The exponential function $e$ in these equations is used to transform the linear predictor (i.e., $\beta_K \cdot X_i$) into a probability, which is always positive and bounded between 0 and 1. By applying the exponential function $e$ to both sides of the previous equations, we get the following:
+The exponential function $e$ in these equations is used to transform the linear predictor (i.e., $\beta_K \cdot X_i$) into a probability, which is always positive and bounded between 0 and 1. By applying the exponential function $e$ to both sides of the previous equations, we get the following for the first class:
 
 <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Multinominal%20Logistic%20Regression/image_2023-05-16_230159351.png"
      alt="Equation."
      style="float: left; margin-right: 10px;" />
+
+These equations are often used in the context of multinomial logistic regression, where the goal is to predict the probability of an observation belonging to each of $K$ classes based on one or more predictor variables.
+
