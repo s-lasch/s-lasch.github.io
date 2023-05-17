@@ -25,6 +25,6 @@ From these equations, we can simplify to the ones below, which are alternate for
 
 The exponential function $e$ in these equations is used to transform the linear predictor (i.e., $\beta_K \cdot X_i$) into a probability, which is always positive and bounded between 0 and 1. By applying the exponential function $e$ to both sides of the previous equations, we get the following:
 
-<img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Multinominal%20Logistic%20Regression/image_2023-05-11_223508567.png"
+<img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Multinominal%20Logistic%20Regression/image_2023-05-16_230159351.png"
      alt="Equation."
      style="float: left; margin-right: 10px;" />
