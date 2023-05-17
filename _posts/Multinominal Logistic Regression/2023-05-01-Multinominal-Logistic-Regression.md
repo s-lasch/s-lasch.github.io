@@ -3,6 +3,9 @@ tag: Logistic Regression
 title: Multinominal Logistic Regression
 ---
 
+Multinomial logistic regression is a statistical method used for predicting categorical outcomes with more than two categories. It is particularly useful when the dependent variable is categorical rather than continuous.
+
+
 ## **Categorical Predictions**
 In **multinomial logistic regression**, the model predicts the probabilities of an observation belonging to each category of the dependent variable. These probabilities can be interpreted as the likelihood of the observation falling into each category. The predicted category is typically the one with the highest probability, making it a *categorical* prediction rather than a *continuous* one.
 
