@@ -1,6 +1,6 @@
 ---
 tag: Logistic Regression
-title: # Multinominal Logistic Regression
+title: Multinominal Logistic Regression
 ---
 
 ## **Categorical Predictions**
