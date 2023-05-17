@@ -1,6 +1,6 @@
 ---
 tag: Logistic Regression
-title: Multinominal Logistic Regression
+title: # Multinominal Logistic Regression
 ---
 
 ## **Categorical Predictions**
@@ -17,8 +17,11 @@ Below is the mathematics behind multinomial logistic regression. These equations
 
 $$
 \text{ln}\frac{\text{P}(Y_i = 1)}{\text{P}(Y_i = K)} = \beta_1 \cdot X_i \\
+
 \text{ln}\frac{\text{P}(Y_i = 2)}{\text{P}(Y_i = K)} = \beta_2 \cdot X_i \\
+
 \vdots \\
+
 \text{ln}\frac{\text{P}(Y_i = K-1)}{\text{P}(Y_i = K)} = \beta_{K-1} \cdot X_i
 $$
 
