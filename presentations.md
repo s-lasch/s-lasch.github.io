@@ -11,7 +11,7 @@ title: Presentations
 <p align="center">ASL to English Translation Poster Presentation with Hunter Phillips April 18, 2023</p>
 </p>
 
-\\
+
 ---
 
 ### **IEEE Student Symposium, 2023**
