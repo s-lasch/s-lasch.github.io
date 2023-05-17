@@ -3,7 +3,7 @@ layout: page
 title: Presentations
 ---
 
-## Illumination Student Scholarship
+## Illumination Student Scholarship, 2023
 ### *Mercyhurst University, Erie, PA*
 
 <p align="center">
