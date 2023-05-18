@@ -96,11 +96,22 @@ print(y_test.shape)
 ```
 
 ### **One-Hot Encoding**
-Now that we have our training and testing data, it is important to remember that any regression model expects either integer or float inputs. Because the `sex` column is categorical, we need to apply **integer encoding** to use them for regression.
+Now that we have our training and testing data, it is important to remember that any regression model expects either integer or float inputs. Because the `sex` column is categorical, we need to apply **integer encoding** to use them for regression. For this, we will apply **one-hot encoding**, which will assign an integer to each distinct class.
 ``` python
 y_train = y_train.apply(lambda x: 0 if x == "M" else 1 if x == "F" else 2)
 y_test = y_test.apply(lambda x: 0 if x == "M" else 1 if x == "F" else 2)
 ```
+
+Now that the $y$ data is encoded, we have to convert each of the train/test datasets to a `torch.tensor`. This is crucial for any regression using Pytorch, as it can only take tensors. 
+
+``` python
+X_train_tensor = torch.tensor(X_train.to_numpy()).float()
+X_test_tensor = torch.tensor(X_test.to_numpy()).float()
+y_train_tensor = torch.tensor(y_train.to_numpy()).long()
+y_test_tensor = torch.tensor(y_test.to_numpy()).long()
+```
+
+For more information on tensors, a really in-depth resource can be found [here](https://towardsdatascience.com/what-are-tensors-in-machine-learning-5671814646ff).
 
 ## **The Model**
 With the data processing complete, we can now begin the process of creating the model. For the implementation of this model, we will be using Pytorch library. Since there are 8 features used to determine the sex, we need to set the `in_features` to 8. Since the model can only predict three possible classes, `out_features` will be set to 3. For more information on Pytorch's `torch.nn` module, refer to [the documentation](https://pytorch.org/docs/stable/nn.html).
@@ -111,9 +122,9 @@ from torch.nn import Linear
 import torch.nn.functional as F
 
 
-torch.manual_seed(348965)     # keep random values consistent
+torch.manual_seed(348965)                                 # keep random values consistent
 
-model = Linear(in_features=8, out_features=3) # define the model
+model = Linear(in_features=8, out_features=3)             # define the model
 
 # define the loss function and optimizer
 criterion = nn.CrossEntropyLoss()                         # use cross-entropy loss for multi-class classification
@@ -176,5 +187,83 @@ accuracy = torch.mean((preds == y_test_tensor).float())
 print('\nAccuracy: {:.2f}%'.format(accuracy.item()*100))
 ```
 ``` text
+Accuracy: 52.63%
+```
+This means that our model accurately identified the gender of abalone based on 8 distinct features 53% of the time.
+
+## **Complete Code**
+Here is the complete code:
+
+``` python
+import torch
+import torch.nn as nn
+from torch.nn import Linear
+import torch.nn.functional as F
+
+
+torch.manual_seed(348965)                                 # keep random values consistent
+
+model = Linear(in_features=8, out_features=3)             # define the model
+
+# define the loss function and optimizer
+criterion = nn.CrossEntropyLoss()                         # use cross-entropy loss for multi-class classification
+optimizer = torch.optim.SGD(model.parameters(), lr=.01)   # learning rate of 0.01, and Stocastic Gradient descent optimizer
+
+# convert the data to PyTorch tensors
+X_train_tensor = torch.tensor(X_train.to_numpy()).float()
+X_test_tensor = torch.tensor(X_test.to_numpy()).float()
+y_train_tensor = torch.tensor(y_train.to_numpy()).long()
+y_test_tensor = torch.tensor(y_test.to_numpy()).long()
+
+# train the model
+num_epochs = 2500    # loop iterations
+
+for epoch in range(num_epochs):
+    # forward pass
+    outputs = model(X_train_tensor)
+    loss = criterion(outputs, y_train_tensor)
+
+    # backward and optimize
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+
+    # print progress every 100 epochs
+    if (epoch+1) % 100 == 0:
+        print('Epoch [{}/{}]\tLoss: {:.4f}'.format(epoch+1, num_epochs, loss.item()))
+
+
+outputs = model(X_test_tensor)
+_, preds = torch.max(outputs, dim=1)
+accuracy = torch.mean((preds == y_test_tensor).float())
+print('\nAccuracy: {:.2f}%'.format(accuracy.item()*100))
+```
+``` text
+Epoch [100/2500]	   Loss: 1.1178
+Epoch [200/2500]	   Loss: 1.1006
+Epoch [300/2500]	   Loss: 1.0850
+Epoch [400/2500]	   Loss: 1.0708
+Epoch [500/2500]	   Loss: 1.0579
+Epoch [600/2500]	   Loss: 1.0460
+Epoch [700/2500]	   Loss: 1.0352
+Epoch [800/2500]	   Loss: 1.0252
+Epoch [900/2500]	   Loss: 1.0161
+Epoch [1000/2500]	   Loss: 1.0077
+Epoch [1100/2500]	   Loss: 0.9999
+Epoch [1200/2500]	   Loss: 0.9927
+Epoch [1300/2500]	   Loss: 0.9860
+Epoch [1400/2500]	   Loss: 0.9799
+Epoch [1500/2500]	   Loss: 0.9741
+Epoch [1600/2500]	   Loss: 0.9688
+Epoch [1700/2500]	   Loss: 0.9638
+Epoch [1800/2500]	   Loss: 0.9592
+Epoch [1900/2500]	   Loss: 0.9549
+Epoch [2000/2500]	   Loss: 0.9509
+Epoch [2100/2500]	   Loss: 0.9471
+Epoch [2200/2500]	   Loss: 0.9435
+Epoch [2300/2500]	   Loss: 0.9402
+Epoch [2400/2500]	   Loss: 0.9371
+Epoch [2500/2500]	   Loss: 0.9342
+
 Accuracy: 52.63%
 ```
