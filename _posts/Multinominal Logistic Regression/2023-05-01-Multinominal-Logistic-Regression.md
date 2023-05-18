@@ -39,12 +39,15 @@ In this example, we will be using University of California, Irvine's [abalone da
 Using the Python `pandas` package, we can see the shape of the data, as well as the first few rows.
 
 ``` python
-df = pd.read_csv("https://raw.githubusercontent.com/s-lasch/CIS-280/main/abalone.csv")
-df.shape
+df = pd.read_csv("https://raw.githubusercontent.com/s-lasch/CIS-280/main/abalone.csv")    # read csv
+df.shape    # get shape
+```
+``` text
+(4177, 9)
 ```
 
 ``` python
-df.head()
+df.head()   # show first 5 rows
 ```
 ``` text
 | sex | length | diameter | height | whole_weight | shucked_weight | viscera_weight | shell_weight | rings |
@@ -57,10 +60,121 @@ df.head()
 ```
 
 ## **Processing the Data**
+We can see that there are three distinct classes---or categories---in the `sex` column: M, F, and I, which stand for Male, Female, and Infant. These represent the classes that our model is going to predict based on the other columns in the dataset. 
+``` python
+df['sex'].value_counts().sort_values(ascending=False)   # count the number of distinct classes
+```
+``` text
+M    1528
+I    1342
+F    1307
+Name: sex, dtype: int64
+```
 
+This means our $y$ data will be the `sex` column, and our $X$ data will be all columns except for `sex`. 
+``` python
+X = df.drop(['sex'], axis=1) 
+y = df['sex']
+```
+
+Now we are ready to split the data into training versus testing. We can do this using the `scikitlearn` package as used below:
+``` python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 5)
+
+print(X_train.shape)
+print(X_test.shape)
+print(y_train.shape)
+print(y_test.shape)
+```
+``` text
+(3341, 8)
+(836, 8)
+(3341,)
+(836,)
+```
+
+### **One-Hot Encoding**
+Now that we have our training and testing data, it is important to remember that any regression model expects either integer or float inputs. Because the `sex` column is categorical, we need to apply **integer encoding** to use them for regression.
+``` python
+y_train = y_train.apply(lambda x: 0 if x == "M" else 1 if x == "F" else 2)
+y_test = y_test.apply(lambda x: 0 if x == "M" else 1 if x == "F" else 2)
+```
 
 ## **The Model**
+With the data processing complete, we can now begin the process of creating the model. For the implementation of this model, we will be using Pytorch library. Since there are 8 features used to determine the sex, we need to set the `in_features` to 8. Since the model can only predict three possible classes, `out_features` will be set to 3. For more information on Pytorch's `torch.nn` module, refer to [the documentation](https://pytorch.org/docs/stable/nn.html).
+``` python
+import torch
+import torch.nn as nn
+from torch.nn import Linear
+import torch.nn.functional as F
+
+
+torch.manual_seed(348965)     # keep random values consistent
+
+model = Linear(in_features=8, out_features=3) # define the model
+
+# define the loss function and optimizer
+criterion = nn.CrossEntropyLoss()                         # use cross-entropy loss for multi-class classification
+optimizer = torch.optim.SGD(model.parameters(), lr=.01)   # learning rate of 0.01, and Stocastic Gradient descent optimizer
+```
 
 ## **Training the Model**
+``` python
+num_epochs = 2500    # loop iterations
+
+for epoch in range(num_epochs):
+    # forward pass
+    outputs = model(X_train_tensor)
+    loss = criterion(outputs, y_train_tensor)
+
+    # backward and optimize
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+
+    # print progress every 100 epochs
+    if (epoch+1) % 100 == 0:
+        print('Epoch [{}/{}]\tLoss: {:.4f}'.format(epoch+1, num_epochs, loss.item()))
+```
+``` text
+Epoch [100/2500]     Loss: 1.1178
+Epoch [200/2500]	   Loss: 1.1006
+Epoch [300/2500]     Loss: 1.0850
+Epoch [400/2500]     Loss: 1.0708
+Epoch [500/2500]	   Loss: 1.0579
+Epoch [600/2500]	   Loss: 1.0460
+Epoch [700/2500]	   Loss: 1.0352
+Epoch [800/2500]     Loss: 1.0252
+Epoch [900/2500]     Loss: 1.0161
+Epoch [1000/2500]	   Loss: 1.0077
+Epoch [1100/2500]	   Loss: 0.9999
+Epoch [1200/2500]	   Loss: 0.9927
+Epoch [1300/2500]	   Loss: 0.9860
+Epoch [1400/2500]	   Loss: 0.9799
+Epoch [1500/2500]	   Loss: 0.9741
+Epoch [1600/2500]	   Loss: 0.9688
+Epoch [1700/2500]	   Loss: 0.9638
+Epoch [1800/2500]	   Loss: 0.9592
+Epoch [1900/2500]	   Loss: 0.9549
+Epoch [2000/2500]	   Loss: 0.9509
+Epoch [2100/2500]	   Loss: 0.9471
+Epoch [2200/2500]	   Loss: 0.9435
+Epoch [2300/2500]	   Loss: 0.9402
+Epoch [2400/2500]	   Loss: 0.9371
+Epoch [2500/2500]	   Loss: 0.9342
+```
 
 ## **Validation**
+Now to check the accuracy, we can run the following code:
+
+``` python
+outputs = model(X_test_tensor)
+_, preds = torch.max(outputs, dim=1)
+accuracy = torch.mean((preds == y_test_tensor).float())
+print('\nAccuracy: {:.2f}%'.format(accuracy.item()*100))
+```
+``` text
+Accuracy: 52.63%
+```
