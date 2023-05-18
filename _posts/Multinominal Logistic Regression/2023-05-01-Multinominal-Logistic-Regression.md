@@ -38,11 +38,12 @@ In this example, we will be using University of California, Irvine's [abalone da
 
 Using the Python `pandas` package, we can see the shape of the data, as well as the first few rows.
 
-``python
+`` python
 df = pd.read_csv("https://raw.githubusercontent.com/s-lasch/CIS-280/main/abalone.csv")
 df.shape
 ``
-``python
+
+`` python
 df.head()
 ``
 
