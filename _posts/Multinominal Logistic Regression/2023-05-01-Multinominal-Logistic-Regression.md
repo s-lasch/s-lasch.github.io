@@ -38,14 +38,21 @@ In this example, we will be using University of California, Irvine's [abalone da
 
 Using the Python `pandas` package, we can see the shape of the data, as well as the first few rows.
 
-`` python
+``` python
 df = pd.read_csv("https://raw.githubusercontent.com/s-lasch/CIS-280/main/abalone.csv")
 df.shape
-``
+```
 
-`` python
+``` python
 df.head()
-``
+```
+| sex | length | diameter | height | whole_weight | shucked_weight | viscera_weight | shell_weight | rings |
+| :-: | :----: | :------: | :----: | :----------: | :------------: | :------------: | :----------: | :---: |
+| M	| 0.455  | 0.365    | 0.095  | 0.5140       | 0.2245         | 0.1010         | 0.150        | 15    |
+| M	| 0.350  | 0.265    | 0.090  | 0.2255       | 0.0995         | 0.0485         | 0.070        | 7     |
+| F	| 0.530  | 0.420    | 0.135  | 0.6770       | 0.2565         | 0.1415         | 0.210        | 9     |
+| M	| 0.440  | 0.365    | 0.125  | 0.5160       | 0.2155         | 0.1140         | 0.155        | 10    |
+| I	| 0.330  | 0.255    | 0.080  | 0.2050       | 0.0895         | 0.0395         | 0.055        | 7     |
 
 ## **Processing the Data**
 
