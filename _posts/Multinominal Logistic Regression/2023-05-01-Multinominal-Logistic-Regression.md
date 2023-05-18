@@ -45,7 +45,8 @@ df.shape
 
 ``` python
 df.head()
-
+```
+```
 | sex | length | diameter | height | whole_weight | shucked_weight | viscera_weight | shell_weight | rings |
 ------------------------------------------------------------------------------------------------------------
 | M	| 0.455  | 0.365    | 0.095  | 0.5140       | 0.2245         | 0.1010         | 0.150        | 15  |
