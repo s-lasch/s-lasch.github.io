@@ -140,12 +140,12 @@ for epoch in range(num_epochs):
 ```
 ``` text
 Epoch [100/2500]     Loss: 1.1178
-Epoch [200/2500]	   Loss: 1.1006
+Epoch [200/2500]     Loss: 1.1006
 Epoch [300/2500]     Loss: 1.0850
 Epoch [400/2500]     Loss: 1.0708
-Epoch [500/2500]	   Loss: 1.0579
-Epoch [600/2500]	   Loss: 1.0460
-Epoch [700/2500]	   Loss: 1.0352
+Epoch [500/2500]     Loss: 1.0579
+Epoch [600/2500]     Loss: 1.0460
+Epoch [700/2500]     Loss: 1.0352
 Epoch [800/2500]     Loss: 1.0252
 Epoch [900/2500]     Loss: 1.0161
 Epoch [1000/2500]	   Loss: 1.0077
