@@ -19,8 +19,8 @@ A multivariate linear regression model can be used to predict the age, though fo
 Below is the mathematics behind multinomial logistic regression. These equations represent a set of log-linear models, where the logarithm of the ratio of the probabilities of each class is linearly related to a predictor variable $X_i$ through a coefficient (or slope) parameter, denoted by $\beta_1$, $\beta_2$, ..., $\beta_{K-1}$. The notation $\text{P}(Y_i = K)$ represents the probability of observation $i$ belonging to class $K$, where $K$ is an integer representation of each class, starting at 1.
 
 <p align="center">
-      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Multinominal%20Logistic%20Regression/image_2023-05-16_225525908.png' 
-           alt='Sigmoid Curve'
+      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Multinominal%20Logistic%20Regression/image_2023-05-17_214302887.png' 
+           alt='Natural log probabilities.'
            width='40%' />
 <p align="center"><em>Image by Author</em></p>
 </p>
@@ -31,7 +31,7 @@ The exponential function $e$ in these equations is used to transform the linear 
 
 <p align="center">
       <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Multinominal%20Logistic%20Regression/image_2023-05-16_230159351.png' 
-           alt='Sigmoid Curve' />
+           alt='Probability equations after exponentiation.' />
 <p align="center"><em>Image by Author</em></p>
 </p>
 
