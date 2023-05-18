@@ -11,10 +11,6 @@ In **multinomial logistic regression**, the model predicts the probabilities of 
 
 In contrast, standard logistic regression, also known as **binary logistic regression**---a special case of [Binomial Logistic Regression](https://s-lasch.github.io/2023/03/16/Binomial-Logistic-Regression.html)---is used when the dependent variable has two categories only. It predicts the probability of an observation belonging to one category versus another. The predictions in binary logistic regression are continuous probabilities between `0` and `1`.
 
-In this example, we will be using University of California, Irvine's [abalone dataset](https://archive.ics.uci.edu/ml/datasets/abalone) to predict the gender of an abalone.
-
-A multivariate linear regression model can be used to predict the age, though for this example, we are predicting the gender of a given abalone based on several distinct features.
-
 ## **Under the Hood**
 Below is the mathematics behind multinomial logistic regression. These equations represent a set of log-linear models, where the logarithm of the ratio of the probabilities of each class is linearly related to a predictor variable $X_i$ through a coefficient (or slope) parameter, denoted by $\beta_1$, $\beta_2$, ..., $\beta_{K-1}$. The notation $\text{P}(Y_i = K)$ represents the probability of observation $i$ belonging to class $K$, where $K$ is an integer representation of each class, starting at 1.
 
@@ -37,3 +33,24 @@ The exponential function $e$ in these equations is used to transform the linear 
 
 These equations are often used in the context of multinomial logistic regression, where the goal is to predict the probability of an observation belonging to each of $K$ classes based on one or more predictor variables.
 
+## **About the Data**
+In this example, we will be using University of California, Irvine's [abalone dataset](https://archive.ics.uci.edu/ml/datasets/abalone) to predict the gender of an abalone. A multivariate linear regression model can be used to predict the age, though for this example, we are predicting the gender of a given abalone based on several distinct features.
+
+Using the Python `pandas` package, we can see the shape of the data, as well as the first few rows.
+
+``python
+df = pd.read_csv("https://raw.githubusercontent.com/s-lasch/CIS-280/main/abalone.csv")
+df.shape
+``
+``python
+df.head()
+``
+
+## **Processing the Data**
+
+
+## **The Model**
+
+## **Training the Model**
+
+## **Validation**
