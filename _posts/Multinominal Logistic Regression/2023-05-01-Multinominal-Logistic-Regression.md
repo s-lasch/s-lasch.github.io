@@ -148,22 +148,22 @@ Epoch [600/2500]     Loss: 1.0460
 Epoch [700/2500]     Loss: 1.0352
 Epoch [800/2500]     Loss: 1.0252
 Epoch [900/2500]     Loss: 1.0161
-Epoch [1000/2500]	   Loss: 1.0077
-Epoch [1100/2500]	   Loss: 0.9999
-Epoch [1200/2500]	   Loss: 0.9927
-Epoch [1300/2500]	   Loss: 0.9860
-Epoch [1400/2500]	   Loss: 0.9799
-Epoch [1500/2500]	   Loss: 0.9741
-Epoch [1600/2500]	   Loss: 0.9688
-Epoch [1700/2500]	   Loss: 0.9638
-Epoch [1800/2500]	   Loss: 0.9592
-Epoch [1900/2500]	   Loss: 0.9549
-Epoch [2000/2500]	   Loss: 0.9509
-Epoch [2100/2500]	   Loss: 0.9471
-Epoch [2200/2500]	   Loss: 0.9435
-Epoch [2300/2500]	   Loss: 0.9402
-Epoch [2400/2500]	   Loss: 0.9371
-Epoch [2500/2500]	   Loss: 0.9342
+Epoch [1000/2500]    Loss: 1.0077
+Epoch [1100/2500]    Loss: 0.9999
+Epoch [1200/2500]    Loss: 0.9927
+Epoch [1300/2500]    Loss: 0.9860
+Epoch [1400/2500]    Loss: 0.9799
+Epoch [1500/2500]    Loss: 0.9741
+Epoch [1600/2500]    Loss: 0.9688
+Epoch [1700/2500]    Loss: 0.9638
+Epoch [1800/2500]    Loss: 0.9592
+Epoch [1900/2500]    Loss: 0.9549
+Epoch [2000/2500]    Loss: 0.9509
+Epoch [2100/2500]    Loss: 0.9471
+Epoch [2200/2500]    Loss: 0.9435
+Epoch [2300/2500]    Loss: 0.9402
+Epoch [2400/2500]    Loss: 0.9371
+Epoch [2500/2500]    Loss: 0.9342
 ```
 
 ## **Validation**
