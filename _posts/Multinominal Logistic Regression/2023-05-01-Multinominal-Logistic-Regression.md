@@ -20,7 +20,8 @@ Below is the mathematics behind multinomial logistic regression. These equations
 
 <p align="center">
       <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_posts/Multinominal%20Logistic%20Regression/image_2023-05-16_225525908.png' 
-           alt='Sigmoid Curve' />
+           alt='Sigmoid Curve'
+           width='75%' />
 <p align="center"><em>Image by Author</em></p>
 </p>
 
