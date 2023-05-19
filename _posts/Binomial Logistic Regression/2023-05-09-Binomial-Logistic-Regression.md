@@ -6,7 +6,7 @@ title: Binomial Logistic Regression
 # Binomial Logistic Regression
 
 ### **About**
-Logistic Regression models are one of the most common machine learning
+Logistic regression models are one of the most common machine learning
 models for handling classification problems. **Binomial Logistic
 Regression** is just one type of logistic regression model. It refers to
 the classification of two variables where a probability is used to
