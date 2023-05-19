@@ -1,5 +1,5 @@
 ---
-tag: K-Nerest Neighbors
+tag: K-Nearest Neighbors
 title: Introduction to kNN Algorithm
 ---
 
