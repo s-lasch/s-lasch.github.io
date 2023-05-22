@@ -50,7 +50,7 @@ df.shape    # get shape
 df.head()   # show first 5 rows
 ```
 ``` text
-| sex | length | diameter | height | whole_weight | shucked_weight | viscera_weight | shell_weight | rings |
+| sex   | length | diameter | height | whole_weight | shucked_weight | viscera_weight | shell_weight | rings |
 ------------------------------------------------------------------------------------------------------------
 | M	| 0.455  | 0.365    | 0.095  | 0.5140       | 0.2245         | 0.1010         | 0.150        | 15  |
 | M	| 0.350  | 0.265    | 0.090  | 0.2255       | 0.0995         | 0.0485         | 0.070        | 7   |
