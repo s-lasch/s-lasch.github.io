@@ -36,7 +36,7 @@ Fig. 2 uses the results of a pregnancy test to further drive home a binary confu
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/truth_table_example.png" 
            alt="Pregnancy confusion matrix example."/>
-<p align="center"><em>Fig 2. Binary confusion matrix (image by author)</em></p>
+<p align="center"><em>Fig 2. Example of binary confusion matrix with pregnancy results (image by author)</em></p>
 </p>
 
 
