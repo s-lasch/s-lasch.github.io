@@ -67,7 +67,9 @@ Precision measures how precise or accurate the positive predictions of a classif
 $$\text{precision} = \frac{TP}{TP+FP}$$  
 
 Let's calculate precision for the `BERGF` class. We need the true positives, $M_{1,1}$, and the false positives, $M_{1,2} + M_{1,3} + M_{1,4}$.
-$$\text{BERGF precision} = \frac{30}{30 + (10 + 7 + 1)} = 0.625$$
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/cdf2efb58bdee99a99f052494423c04a056ae228/images/bergf_precision.svg" />
+</p>
 
 As a rule of thumb, you should optimize your model for precision when you want to decrease the number of false positives.
 
@@ -77,7 +79,9 @@ As a rule of thumb, you should optimize your model for precision when you want t
 Recall, also known as sensitivity or true positive rate, measures the ability of the classifier to correctly identify positive instances. It is the ratio of true positives to the sum of true positives and false negatives. Recall indicates the proportion of actual positive instances that are correctly predicted. $$\text{recall} = \frac{TP}{TP + FN}$$
 
 Let's calculate recall for the `BERGM` class. 
-$$\text{BERGM recall} = \frac{33}{33 + (10 + 5 + 8)} = 0.5893$$
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/cdf2efb58bdee99a99f052494423c04a056ae228/images/bergm_recall.svg" />
+</p>
 
 You should optimize your model for recall if you want to decrease the number of false negatives.
 
