@@ -34,7 +34,7 @@ In a binary confusion matrix, we are only dealing with two classes. By comparing
 Fig. 2 uses the results of a pregnancy test to further drive home a binary confusion table, as well as understanding the truth values TP, TN, FP, and FN. 
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/truth_tables.png" 
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/truth_table_example.png" 
            alt="Pregnancy confusion matrix example."/>
 <p align="center"><em>Fig 2. Binary confusion matrix (image by author)</em></p>
 </p>
