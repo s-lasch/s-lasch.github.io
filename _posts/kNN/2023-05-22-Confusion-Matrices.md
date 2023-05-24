@@ -3,7 +3,7 @@ tag: K-Nearest Neighbors
 title: Confusion Matrices
 ---
 
-Obviously, our goal is to model our data as accurately as possible. For classification problems such as logistic regression and kNN, this is where **confusion matrices** are useful. They will make calcuating the precision, recall, accuracy, and other metrics possible, and it is not difficult to fully understand.
+Obviously, our goal is to model our data as accurately as possible. For classification problems such as logistic regression and kNN, this is where **confusion matrices** are useful. They will make calcuating the precision, recall, accuracy, and other metrics possible, and it is not difficult to fully understand how they work.
 
 
 ### **Confusion Matrices**
