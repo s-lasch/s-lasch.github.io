@@ -48,7 +48,7 @@ Typically, the first step in interpreting a confusion matrix should start with i
 
 This classification table, (we'll call it $M$), provides a decent amount of information: 
 * Judging by the diagonal values, the model correctly predicted 130 correct samples out of the 219 total. This means that the **overall accuracy is 59.3%**, a terrible score.
-* The model confused NORSE females with BERG females and NORSE males. This is evident with the values $\text{M}_{3,1} = 10$ (row 3 column 1) and $\text{M}_{3,4} = 12$. 
+* The model confused NORSE females with BERG females and NORSE males. This is evident with the values \text{M}_{3,1}$= 10$ (row 3 column 1) and \text{M}_{3,4}$= 12$. 
 * To determine the extent to which the model should be optimized, we need to use these values to calculate some metrics.
 
 ---
