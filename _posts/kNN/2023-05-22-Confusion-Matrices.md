@@ -80,7 +80,7 @@ Recall, also known as sensitivity or true positive rate, measures the ability of
 
 Let's calculate recall for the `BERGM` class. 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/cdf2efb58bdee99a99f052494423c04a056ae228/images/bergm_recall.svg", width="110%" />
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/cdf2efb58bdee99a99f052494423c04a056ae228/images/bergm_recall.svg", width="35%" />
 </p>
 
 You should optimize your model for recall if you want to decrease the number of false negatives.
