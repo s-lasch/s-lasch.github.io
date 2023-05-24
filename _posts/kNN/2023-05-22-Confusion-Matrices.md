@@ -66,8 +66,7 @@ This classification table, (we'll call it $M$), provides a decent amount of info
 Precision measures how precise or accurate the positive predictions of a classifier are. It is the ratio of true positives to the sum of true positives and false positives. Precision indicates how many of the instances *predicted* as positive are *actually positive.*
 $$\text{precision} = \frac{TP}{TP+FP}$$  
 
-Let's calculate precision for the `BERGF` class. We need the true positives, $M_{1,1}$, and the false positives, $M_{1,2} + M_{1,3} + M_{1,4}$
-
+Let's calculate precision for the `BERGF` class. We need the true positives, $M_{1,1}$, and the false positives, $M_{1,2} + M_{1,3} + M_{1,4}$.
 $$\text{BERGF precision} = \frac{30}{30 + (10 + 7 + 1)} = 0.625$$
 
 As a rule of thumb, you should optimize your model for precision when you want to decrease the number of false positives.
