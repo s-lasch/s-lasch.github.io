@@ -68,7 +68,7 @@ $$\text{precision} = \frac{TP}{TP+FP}$$
 
 Let's calculate precision for the `BERGF` class. We need the true positives, $M_{1,1}$, and the false positives, $M_{1,2} + M_{1,3} + M_{1,4}$.
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/cdf2efb58bdee99a99f052494423c04a056ae228/images/bergf_precision.svg", width="110%" />
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/cdf2efb58bdee99a99f052494423c04a056ae228/images/bergf_precision.svg", width="50%" />
 </p>
 
 As a rule of thumb, you should optimize your model for precision when you want to decrease the number of false positives.
