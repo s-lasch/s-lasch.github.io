@@ -26,7 +26,7 @@ To make things more clear in the sections to come, below are the different truth
 In a binary confusion matrix, we are only dealing with two classes. By comparing the values across different confusion matrices, you can assess if there is a reduction in misclassifications. This works for all classification models, including logistic regression, or kNN models. Fig. 1 below demonstrates what a binary confusion matrix looks like, as well as how to interpret the values inside.
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/binary_confusion_matrix.png" 
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/binary__confusion_matrix.png" 
            alt="Binary Confusion Matrix"/>
 <p align="center"><em>Fig 1. Binary confusion matrix (image by author)</em></p>
 </p>
