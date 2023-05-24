@@ -1,6 +1,6 @@
 ---
 tag: K-Nearest Neighbors
-title: Confusion Matrices
+title: # Confusion Matrices
 ---
 
 ### **Background**
