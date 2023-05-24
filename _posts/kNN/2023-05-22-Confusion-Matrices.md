@@ -25,25 +25,25 @@ To make things more clear in the sections to come, below are the different truth
 
 ### **Binary Confusion**
 
-In a binary confusion matrix, we are only dealing with two classes. By comparing the values across different confusion matrices, you can assess if there is a reduction in misclassifications. This works for all classification models, including logistic regression, or kNN models. 
+In a binary confusion matrix, we are only dealing with two classes. By comparing the values across different confusion matrices, you can assess if there is a reduction in misclassifications. This works for all classification models, including logistic regression, or kNN models. Fig. 1 below demonstrates what a binary confusion matrix looks like, as well as how to interpret the values inside.
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/binary_confusion_matrix.png" 
            alt="Binary Confusion Matrix"/>
-<p align="center"><em>Image by Author</em></p>
+<p align="center"><em>Fig 1. Binary confusion matrix (image by author)</em></p>
 </p>
 
 
 ### **Multi-class Confusion**
 
-Multi-class confusion matrices get increasingly complex with the more classes we add. In our example, we will be using four classes, and a kNN algorithm for classification. Fig. 4 represents this type of confusion matrix. 
+Multi-class confusion matrices get increasingly complex with the more classes we add. In our example, we will be using four classes, and a kNN algorithm for classification. Fig. 2 represents this type of confusion matrix. 
 
 Typically, the first step in interpreting a confusion matrix should start with identifying positive and negative classes. For our case, we are attempting to classify unseen data as belonging to one of four classes: `BERGF`, `BERGM`, `NORSEM`, and `NORSEF`. Since it would make no sense to favor one population over another, we will need to calculate accuracy, precision, recall, etc. for each class.
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multiclass_confusion_matrix.png" 
            alt="Multi-class Confusion Matrix"/>
-<p align="center"><em>Image by Author</em></p>
+<p align="center"><em>Fig 2. Multi-class confusion matrix (image by author)</em></p>
 </p>
 
 This classification table, (we'll call it $M$), provides a decent amount of information: 
