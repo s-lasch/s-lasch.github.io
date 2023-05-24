@@ -31,17 +31,25 @@ In a binary confusion matrix, we are only dealing with two classes. By comparing
 <p align="center"><em>Fig 1. Binary confusion matrix (image by author)</em></p>
 </p>
 
+Fig. 2 uses the results of a pregnancy test to further drive home a binary confusion table, as well as understanding the truth values TP, TN, FP, and FN. 
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/binary_confusion_matrix.png" 
+           alt="Pregnancy confusion matrix example."/>
+<p align="center"><em>Fig 2. Binary confusion matrix (image by author)</em></p>
+</p>
+
 
 ### **Multi-class Confusion**
 
-Multi-class confusion matrices get increasingly complex with the more classes we add. In our example, we will be using four classes, and a kNN algorithm for classification. Fig. 2 represents this type of confusion matrix. 
+Multi-class confusion matrices get increasingly complex with the more classes we add. In our example, we will be using four classes, and a kNN algorithm for classification. Fig. 3 represents this type of confusion matrix. 
 
 Typically, the first step in interpreting a confusion matrix should start with identifying positive and negative classes. For our case, we are attempting to classify unseen data as belonging to one of four classes: `BERGF`, `BERGM`, `NORSEM`, and `NORSEF`. Since it would make no sense to favor one population over another, we will need to calculate accuracy, precision, recall, etc. for each class.
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multiclass_confusion_matrix.png" 
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/truth_values.png" 
            alt="Multi-class Confusion Matrix"/>
-<p align="center"><em>Fig 2. Multi-class confusion matrix (image by author)</em></p>
+<p align="center"><em>Fig 3. Multi-class confusion matrix (image by author)</em></p>
 </p>
 
 This classification table, (we'll call it $M$), provides a decent amount of information: 
