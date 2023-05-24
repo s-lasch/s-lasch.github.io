@@ -1,9 +1,7 @@
 ---
 tag: K-Nearest Neighbors
-title: #Confusion Matrices
+title: Confusion Matrices
 ---
-
-### **Background**
 
 Obviously, our goal is to model our data as accurately as possible. This is where **confusion matrices** come into play. They will make calcuating the precision, recall, accuracy, and other metrics possible, and it is not difficult to fully understand.
 
