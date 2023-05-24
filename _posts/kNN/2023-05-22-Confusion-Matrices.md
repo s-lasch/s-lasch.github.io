@@ -20,7 +20,7 @@ To make things more clear in the sections to come, below are the different truth
 * **True Positive (TP):** The model correctly predicts a true value.
 * **True Negative (TN):** The model correctly predicts a false value.
 * **False Positive (FP):** The model incorrectly predicts a true value when it should have been false.
-* **False Negative (FN):** The model incorrectly predicts a false value when it should have been positive true.
+* **False Negative (FN):** The model incorrectly predicts a false value when it should have been true.
 
 
 ### **Binary Confusion**
