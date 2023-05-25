@@ -47,7 +47,7 @@ Multi-class confusion matrices get increasingly complex with the more classes we
 Typically, the first step in interpreting a confusion matrix should start with identifying positive and negative classes. For our case, we are attempting to classify unseen data as belonging to one of four classes: `BERGF`, `BERGM`, `NORSEM`, and `NORSEF`. Since it would make no sense to favor one population over another, we will need to calculate accuracy, precision, recall, etc. for each class.
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multiclass_confusion_matrix.png" 
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi-class_confusion_matrix.png" 
            alt="Multi-class Confusion Matrix"/>
 <p align="center"><em>Fig 3. Multi-class confusion matrix (image by author)</em></p>
 </p>
@@ -60,6 +60,7 @@ This classification table, (we'll call it $M$), provides a decent amount of info
 ---
 
 ## **Evaluation Metrics**
+Below are some of the most common evaluation metrics used for classification models.
 
 ### **Precision**
 
@@ -89,3 +90,43 @@ You should optimize your model for recall if you want to decrease the number of 
 ### **Accuracy**
 
 Accuracy measures of how often the classifier correctly predicts the class of an instance. It is the ratio of the correctly classified instances to the total number of instances in the dataset. Higher accuracy indicates a better overall performance of the classifier. In the Multi-class Confusion section, we calculated the model's overall accuracy by adding all the correct predictions and dividing it by the number of total samples. 
+
+
+### **F1-score**
+
+Another common metric is the F1-score, which rates the successfulness of a classification model. It is the [harmonic mean](https://www.investopedia.com/terms/h/harmonicaverage.asp) of both the precision and recall for a given class. The benefit of a harmonic mean rather than a simple average is that it punishes extreme values. If a classification model has a precision of 1.0 and a recall of 0.0, has a simple average of 0.5, and an F1-score of 0. Below is the formula to calculate the F1-score.
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/2cb57db2189794a4b1ff610a7ffedbb45701de89/images/general_f1_score.svg" />
+</p>
+
+For a multi-class classifier, instead of calculating an overall F1-score, we must calculate the F1-score for each class individually, in a one-versus-rest fashion. So, we just need to apply the formulas for precision, recall, and F1-score for each class.
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/2cb57db2189794a4b1ff610a7ffedbb45701de89/images/multiclass_f1_score.svg" />
+</p>
+
+The following equations demonstrates how we can calculate the F1-scores for each class in the multi-class confusion matrix from above. 
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi-class_confusion_matrix.png" 
+           alt="Multi-class Confusion Matrix"/>
+</p>
+
+First we need to find the precision and recall for the `BERGF` class, then apply the above equation to find the F1-score:
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/d9fdd5dbf0328e874a38afa11b35ecdb3f2709aa/images/f1_bergf.svg" />
+</p>
+
+Then, we calculate precision and recall for the remaining classes:
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/d9fdd5dbf0328e874a38afa11b35ecdb3f2709aa/images/prec_and_recall_rest.svg" />
+</p>
+
+Finally, we apply the F1-score equation to each class:
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/d9fdd5dbf0328e874a38afa11b35ecdb3f2709aa/images/f1_score_rest.svg" />
+</p>
