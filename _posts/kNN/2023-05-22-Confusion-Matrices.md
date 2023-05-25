@@ -48,7 +48,7 @@ Typically, the first step in interpreting a confusion matrix should start with i
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi_class_confusion_matrix.png" alt="Multi-class Confusion Matrix" 
-           width="40%"/>
+           width="50%"/>
 <p align="center"><em>Fig 3. Multi-class confusion matrix (image by author)</em></p>
 </p>
 
@@ -109,7 +109,7 @@ For a multi-class classifier, instead of calculating an overall F1-score, we mus
 The following equations demonstrates how we can calculate the F1-scores for each class in the multi-class confusion matrix from above. 
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi_class_confusion_matrix.png" width="40%"
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi_class_confusion_matrix.png" width="50%"
            alt="Multi-class Confusion Matrix"/>
 </p>
 
