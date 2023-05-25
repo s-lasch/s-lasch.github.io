@@ -47,8 +47,8 @@ Multi-class confusion matrices get increasingly complex with the more classes we
 Typically, the first step in interpreting a confusion matrix should start with identifying positive and negative classes. For our case, we are attempting to classify unseen data as belonging to one of four classes: `BERGF`, `BERGM`, `NORSEM`, and `NORSEF`. Since it would make no sense to favor one population over another, we will need to calculate accuracy, precision, recall, etc. for each class.
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi_class_confusion_matrix.png" 
-           alt="Multi-class Confusion Matrix", width="40%"/>
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi_class_confusion_matrix.png" alt="Multi-class Confusion Matrix" 
+           width="40%"/>
 <p align="center"><em>Fig 3. Multi-class confusion matrix (image by author)</em></p>
 </p>
 
