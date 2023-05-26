@@ -13,7 +13,6 @@ Below are some of the most common evaluation metrics used for classification mod
 
 <br>
 <br>
-<br>
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/multi_class_confusion_matrix.png" alt="Multi-class Confusion Matrix" 
@@ -80,7 +79,6 @@ First we need to find the precision and recall for the `BERGF` class, then apply
 </p>
 
 <br>
-<br>
 
 Then, we calculate precision and recall for the remaining classes:
 
@@ -88,7 +86,6 @@ Then, we calculate precision and recall for the remaining classes:
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/d9fdd5dbf0328e874a38afa11b35ecdb3f2709aa/images/prec_and_recall_rest.svg" />
 </p>
 
-<br>
 <br>
 
 Finally, we apply the F1-score equation to each class:
