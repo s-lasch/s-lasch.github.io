@@ -78,3 +78,8 @@ hr {
 .copy-code-button:active {
     background-color: #D9D9D9;
 }
+
+.highlight pre {
+  /* Avoid pushing up the copy buttons. */
+  margin: 0;
+}
