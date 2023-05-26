@@ -24,9 +24,10 @@ Below are some of the most common evaluation metrics used for classification mod
 ### **Precision**
 
 Precision measures how precise or accurate the positive predictions of a classifier are. It is the ratio of true positives to the sum of true positives and false positives. Precision indicates how many of the instances *predicted* as positive are *actually positive.*
+
 $$\text{precision} = \frac{TP}{TP+FP}$$  
 
-Let's calculate precision for the `BERGF` class. We need the true positives, $M_{1,1}$, and the false positives, $M_{1,2} + M_{1,3} + M_{1,4}$.
+Let's calculate precision for the `BERGF` class. We need the true positives, $M_{1,1}$, and the false positives, $M_{1,2} + M_{1,3} + M_{1,4}$
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/2cd26b6067f845aad6e9c9fa5fa0c1912a07d438/images/bergf_prec.svg" />
 </p>
@@ -36,9 +37,11 @@ As a rule of thumb, you should optimize your model for precision when you want t
 
 ### **Recall**
 
-Recall, also known as sensitivity or true positive rate, measures the ability of the classifier to correctly identify positive instances. It is the ratio of true positives to the sum of true positives and false negatives. Recall indicates the proportion of actual positive instances that are correctly predicted. $$\text{recall} = \frac{TP}{TP + FN}$$
+Recall, also known as sensitivity or true positive rate, measures the ability of the classifier to correctly identify positive instances. It is the ratio of true positives to the sum of true positives and false negatives. Recall indicates the proportion of actual positive instances that are correctly predicted. 
 
-Let's calculate recall for the `BERGM` class. 
+$$\text{recall} = \frac{TP}{TP + FN}$$
+
+Let's calculate recall for the `BERGM` class. We need the true positives, $M_{2,2}$, and the false negatives, $M_{1,2} + M_{3,2} + M_{4,2}$
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/2cd26b6067f845aad6e9c9fa5fa0c1912a07d438/images/bergm_rec.svg" />
 </p>
