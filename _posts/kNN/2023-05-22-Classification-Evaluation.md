@@ -3,7 +3,7 @@ tag: K-Nearest Neighbors
 title: Classification Evaluation
 ---
 
-Below are some of the most common evaluation metrics used for classification models. For a binary classifier, this is very straight-forward, but for a multi-class classifier, we need some more intuition about a confusion matrix. For a quick reminder, we will be using the following matrices for all evaluation metrics in this article:
+Below are some of the most common evaluation metrics used for classification models. For a binary classifier, this is very straight-forward, but for a multi-class classifier, we need some more intuition about a confusion matrix. For a quick reminder, we will be using the following matrices from my previous article about [Confusion Matrices](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html):
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/images/binary__confusion_matrix.png" 
