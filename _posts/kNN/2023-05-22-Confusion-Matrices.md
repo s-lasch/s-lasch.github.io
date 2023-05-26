@@ -1,5 +1,5 @@
 ---
-tag: K-Nearest Neighbors
+tag: Classifier Assessment
 title: Confusion Matrices
 ---
 
