@@ -21,7 +21,7 @@ When thinking about a $k$NN classification model, or **$k$-classifier** for shor
 <p align="center"><em>Fig 1. Example of a tie (image by author)</em></p>
 </p>
 
-For a $k$-classifier, ties are determined as in Fig. 1. The circle represents an area in which all data points *within the circle* count as a neighbor. In this case, the new point is equidistant from the square and the X. In this case, since our circle defines 2 neighbors, and $k=2$, we have a tie. Typically, we only need one of these to be true.
+For a $k$-classifier, ties are determined as in Fig. 1. The circle represents an area in which all data points *within the circle* count as a neighbor. In this case, the new point is equidistant from the square and the X, and since our circle defines 2 neighbors, we have a tie.
 
 This raises a problem since our classifier selects the class label with the minimum distance from our new point, yet in this case, the distances are equal.
 
