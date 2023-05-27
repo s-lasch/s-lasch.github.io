@@ -44,7 +44,9 @@ url = "https://www.statsmachine.net/databases/STAT_139/Howells.csv"
 Howells = pd.read_csv(url)
 ```
 
-Now that we have the dataset in memory, we can begin the filtering process. Here, we will filter the data to contain only people from `NORSE` or `BERG` populations. These are the locations, and the `PopSex` column splits each into male or female, hence the `F` and `M` after the population name. The `'GOL', 'NOL', 'BNL', 'BBH', 'XCB'` features measure different dimensions of the human cranium. The description for each feature can be found [here](https://search.r-project.org/CRAN/refmans/TestDimorph/html/Howells.html). These columns, excluding `PopSex`, will become our training data. The `crosstab()` function is for visualization purposes, and the same result can be obtained alternatively by using the `value_counts()` function.
+Now that we have the dataset in memory, we can begin the filtering process. Here, we will filter the data to contain only people from `NORSE` or `BERG` populations. These are the locations, and the `PopSex` column splits each into male or female, hence the `F` and `M` after the population name. 
+
+The `'GOL', 'NOL', 'BNL', 'BBH', 'XCB'` features measure different dimensions of the human cranium. The description for each feature can be found [here](https://search.r-project.org/CRAN/refmans/TestDimorph/html/Howells.html). These columns, excluding `PopSex`, will become our training data. The `crosstab()` function is for visualization purposes, and the same result can be obtained alternatively by using the `value_counts()` function.
 
 ``` python
 # filter the data
