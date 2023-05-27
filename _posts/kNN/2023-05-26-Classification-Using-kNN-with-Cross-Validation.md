@@ -63,7 +63,7 @@ ct = pd.crosstab(index=HBNMF['PopSex'], columns='count').T
 ct
 ```
 
-Now we can begin with the $k$ part of the $k$-classifier. Essentially, the value $k$ represents the number of neighbors for our model to account for when it is trying to classify a new datapoint. As alluded to earlier, and from [this post](https://stats.stackexchange.com/questions/43388/different-use-of-neighbors-in-knn-classification-algorithm) we don't necessarily need to choose a fixed value for $k$---a similar result can be obtained by drawing a circle with a given radius, $r$, such that all instances within the resulting circle count as a neighbor. For this example, we will be using the former approach, by finding an optimal value for $k$.
+Now we can begin with the $k$ part of the $k$-classifier. Essentially, the value $k$ represents the number of neighbors for our model to account for when it is trying to classify a new datapoint. As alluded to earlier, and from [this post](https://stats.stackexchange.com/questions/43388/different-use-of-neighbors-in-knn-classification-algorithm), we don't necessarily need to choose a fixed value for $k$. A similar result can be obtained by drawing a circle with a given radius, $r$, such that all instances within the resulting circle count as a neighbor. For this example, we will be using the former approach, by finding an optimal number of neighbors that minimizes false positives and false negatives.
 
 ``` python
 # 1 nearest neighbor
