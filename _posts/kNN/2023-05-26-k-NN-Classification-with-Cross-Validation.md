@@ -1,6 +1,6 @@
 ---
 tag: K-Nearest Neighbors
-title: Classification Using kNN With Cross-Validation
+title: k-NN Classification With Cross-Validation
 ---
 
 This article goes into detail about the implementation of cross-validation for $k$-NN classifiers, ties, and touches on confusion matrices. Links to external references are provided, and it is also recommended to use other sources to cross-validate *my* work with that of others! 😉
