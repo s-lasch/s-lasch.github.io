@@ -134,7 +134,7 @@ row_0
 3           0      8       6      38
 ```
 
-Doing some simple calculations, it seems that the optimal value of $k$ is 7. 
+Doing some simple calculations, it seems that the optimal value of $k$ is 7. Do note that we want to choose odd values for $k$ so that we avoid ties.
 
 
 ### **The Resulting Matrix**
