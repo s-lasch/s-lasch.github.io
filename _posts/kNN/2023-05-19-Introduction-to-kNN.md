@@ -1,6 +1,6 @@
 ---
 tag: K-Nearest Neighbors
-title: Introduction to kNN Algorithm
+title: Introduction to $k$-NN
 ---
 
 *Coming soon...*
