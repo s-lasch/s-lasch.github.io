@@ -1,5 +1,5 @@
 ---
-tag: K-Nearest Neighbors
+tag: $k$-Nearest Neighbors
 title: $k$-NN Classification With Cross-Validation
 ---
 
