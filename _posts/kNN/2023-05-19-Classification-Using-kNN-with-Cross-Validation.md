@@ -15,7 +15,11 @@ When thinking about a $k$NN classification model, or **$k$-classifier** for shor
 
 ### **Dealing With Ties**
 
-*Fig. 1: **knn_tie_example.svg***
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/f728c1a593c4ab810308a748f91f0a7c968325ff/images/knn_tie_example.svg" 
+           alt="Example of a tie in a kNN model."/>
+<p align="center"><em>Fig 1. Example of a tie (image by author)</em></p>
+</p>
 
 For a $k$-classifier, ties are determined as in Fig. 1. The circle represents an area in which all data points *within the circle* count as a neighbor. In this case, the new point is equidistant from the square and the X. In this case, since our circle defines 2 neighbors, and $k=2$, we have a tie. Typically, we only need one of these to be true.
 
@@ -57,7 +61,7 @@ ct = pd.crosstab(index=HBNMF['PopSex'], columns='count').T
 ct
 ```
 
-Now we can begin with the $k$ part of the $k$-classifier. Essentially, the value $k$ represents the number of neighbors for our model to account for when it is trying to classify a new datapoint. As alluded to earlier, we don't necessarily need to choose a value for $k$---a similar result can be obtained by drawing a circle with a given radius, $r$, such that all instances within the resulting circle count as a neighbor. For this example, we will be using the former approach, by finding an optimal value for $k$.
+Now we can begin with the $k$ part of the $k$-classifier. Essentially, the value $k$ represents the number of neighbors for our model to account for when it is trying to classify a new datapoint. As alluded to earlier, and from [this post](https://stats.stackexchange.com/questions/43388/different-use-of-neighbors-in-knn-classification-algorithm) we don't necessarily need to choose a fixed value for $k$---a similar result can be obtained by drawing a circle with a given radius, $r$, such that all instances within the resulting circle count as a neighbor. For this example, we will be using the former approach, by finding an optimal value for $k$.
 
 ``` python
 # 1 nearest neighbor
