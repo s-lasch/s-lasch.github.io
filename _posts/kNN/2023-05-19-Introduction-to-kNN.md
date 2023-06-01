@@ -5,4 +5,7 @@ title: Introduction to $k$-NN
 
 *Coming soon...*
 
-{% include scatter_matrix.html %}
+<iframe
+  src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_includes/scatter_matrix.html"
+  style="width:100%; height:300px;"
+></iframe>
