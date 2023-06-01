@@ -5,7 +5,14 @@ title: Introduction to $k$-NN
 
 *Coming soon...*
 
+```
 <iframe
-  src="http://gist-it.appspot.com/https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_includes/scatter_matrix.html"
+  src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_includes/scatter_matrix.html"
   style="width:100%; height:300px;"
 ></iframe>
+```
+
+<embed src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/main/_includes/scatter_matrix.html"
+width=100%
+height=300px
+onerror="alert('URL invalid !!');" />
