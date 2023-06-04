@@ -50,4 +50,4 @@ ProfileReport(df, title="MonkeyType Report").to_notebook_iframe()
 
 To get the following: 
 
-{% include monkey_type_report.html %}
+<iframe src="monkty_type_report.html" width="100%" height="300px"></iframe>
