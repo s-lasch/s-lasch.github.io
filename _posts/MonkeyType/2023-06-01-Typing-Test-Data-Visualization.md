@@ -26,7 +26,9 @@ I have always typed fast, typically around 90 WPM, but I plateaued for many year
 
 ## **The Best Part**
 
-One of the most interesting parts of this website---at least to me as a data scientist---is the fact that I can download my alltime results as a `csv` file. With this and a little bit of Python, I can see my typing statistics in a whole new light. Below, I have used the following code to generate a report of the last year of my typing results. I used the `pandas-profiling` package to accomplish this. The following code cell was executed using [Google Colaboratory](https://colab.research.google.com).
+One of the most interesting parts of this website---at least to me as a data scientist---is the fact that I can download my alltime results as a `csv` file. With this and a little bit of Python, I can see my typing statistics in a whole new light. 
+
+Below, I have used the following code to generate a report of the last year of my typing results. I used the `pandas-profiling` package to accomplish this. The following code cell was executed using [Google Colaboratory](https://colab.research.google.com).
 
 ``` python
 # download data
