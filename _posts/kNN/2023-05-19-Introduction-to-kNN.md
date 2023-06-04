@@ -6,4 +6,4 @@ title: Introduction to $k$-NN
 *Coming soon...*
 
 
-{% include scatter_matrix_iframe.html %}
+<iframe src="https://drive.google.com/file/d/1f8VtiRThGVxHQtZNA6RoNuskzHsvaqTH/view?usp=drive_link" width="100%" height="300px"></iframe>
