@@ -6,10 +6,13 @@ title: Introduction to $k$-NN
 > **NOTE:** *all data and figures in this post are made using* `numpy` *and* `matplotlib`*.* 
 
 ### **TODO:**
+
 #### Overview
 - [ ] Add an overview
+
 #### Uses
 - [ ] Add some use cases for $k$-NN
+
 #### The Classification Algorithm
 - [x] Create an example of a $k$-NN problem
 - [x] Type up rough notes describing the code 
