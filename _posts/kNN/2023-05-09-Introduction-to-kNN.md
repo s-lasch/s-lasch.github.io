@@ -53,7 +53,7 @@ These diagrams represent a form of classification similar to $k$-NN. Each line r
 <p align="center">
       <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/00febf318615169eb7b22c485974137b104548c8/images/voronoi_tessellation_example.svg' 
            alt='Voronoi diagram.'
-           width='40%' />
+           width='60%' />
 <p align="center"><em>Voronoi diagram (image by author)</em></p>
 </p>
 
@@ -62,7 +62,7 @@ Let’s add some more color to this plot. We can really see how this resembles a
 <p align="center">
       <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/00febf318615169eb7b22c485974137b104548c8/images/voronoi_tessellation_colored.svg' 
            alt='Voronoi diagram colored.'
-           width='40%' />
+           width='60%' />
 <p align="center"><em>Voronoi diagram with colored polygons (image by author)</em></p>
 </p>
 
