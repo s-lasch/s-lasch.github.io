@@ -19,6 +19,9 @@ title: Introduction to $k$-NN
 - [ ] Clean up notes for optimal/alternative approaches for finding $k$
 - [ ] Include `plotly` scatter matrix in this section (maybe)
 
+<br>
+<br>
+
 ## **Overview**
 
 ## **Uses**
