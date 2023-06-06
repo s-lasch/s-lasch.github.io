@@ -51,7 +51,7 @@ These diagrams have a [wide variety of uses](https://www.google.com/url?sa=t&rct
 These diagrams represent a form of classification similar to $k$-NN. Each line represents the half-way point between any two given points. These lines intersect at vertices, which are equidistant from three points instead of two. 
 
 <p align="center">
-      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/00febf318615169eb7b22c485974137b104548c8/images/voronoi_tessellation_example.svg' 
+      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/c4bf567f4a10c7984e179599057421a8a09175fb/images/voronoi_tessellation_example_transparent.svg' 
            alt='Voronoi diagram.'
            width='75%' />
 <p align="center"><em>Voronoi diagram (image by author)</em></p>
@@ -60,7 +60,7 @@ These diagrams represent a form of classification similar to $k$-NN. Each line r
 Let’s add some more color to this plot. We can really see how this resembles a $k$-NN model if we color each polygon to match the point inside. 
 
 <p align="center">
-      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/00febf318615169eb7b22c485974137b104548c8/images/voronoi_tessellation_colored.svg' 
+      <img src='https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/c4bf567f4a10c7984e179599057421a8a09175fb/images/voronoi_tessellation_colored_transparent.svg' 
            alt='Voronoi diagram colored.'
            width='75%' />
 <p align="center"><em>Voronoi diagram with colored polygons (image by author)</em></p>
