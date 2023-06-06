@@ -63,10 +63,10 @@ Below is a simple dashboard of the statistics found in the `results.csv` file, l
 
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px;">
-  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/wpm.svg" alt="Displays statistics on words per minute (wpm) broken down by each mode" width="60%"/>
-  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/accuracy.svg" alt="Displays accuracy statistics broken down by each mode" width="60%"/>
-  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/raw_wpm.svg" alt="Displays raw words per minute broken down by each mode" width="60%"/>
-  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/consistency.svg" alt="Displays typing speed consistency broken down by each mode" width="60%"/>
+  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/wpm.svg" alt="Displays statistics on words per minute (wpm) broken down by each mode" width="90%"/>
+  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/accuracy.svg" alt="Displays accuracy statistics broken down by each mode" width="90%"/>
+  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/raw_wpm.svg" alt="Displays raw words per minute broken down by each mode" width="90%"/>
+  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/consistency.svg" alt="Displays typing speed consistency broken down by each mode" width="90%"/>
 </div>
 
 
