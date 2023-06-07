@@ -11,7 +11,7 @@ title: Introduction to $k$-NN
 - [X] Add an overview
 
 #### Uses
-- [x] ~Add some use cases~ -- *decided to remove section*
+- [ ] <s>Add some use cases</s> -- *decided to remove section*
 
 #### The Classification Algorithm
 - [x] Create an example of a $k$-NN problem
