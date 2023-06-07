@@ -16,6 +16,7 @@ title: Introduction to $k$-NN
 #### The Classification Algorithm
 - [x] Create an example of a $k$-NN problem
 - [x] Type up rough notes describing the code 
+- [ ] Clean up optimal $k$ and alternative method sections
 - [ ] Clean up notes for optimal/alternative approaches for finding $k$
 - [ ] Include `plotly` scatter matrix in this section (maybe)
 
@@ -32,7 +33,7 @@ title: Introduction to $k$-NN
 ### **Finding Optimal $k$**
 
 *This method involves using **cross-validation** to determine the optimal value of $k$. It involves choosing a fixed value for $k$ and constructing a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) of each feature. Then, we calculate the [various evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html). Doing this for numerous values of $k$, the optimal value will have the minimal amount of false positives and false negatives.*
-- [ ] Clean up this section
+
 
 ### **Alternative Method**
 
