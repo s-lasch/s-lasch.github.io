@@ -60,7 +60,7 @@ The plots were created using [plotly.express](https://plotly.com/python/plotly-e
 
 <div style="display: flex;">
   <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/language_pie.svg" alt="Displays language proportions in typing tests" width="50%"/>
-  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/pie_chart.svg" alt="Displays typing test mode proportions in typing tests" width="50%"/>
+  <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/83db5ef270ec9245ec4557d6207b4155bd52009e/images/pie_chart.svg" alt="Displays typing test mode proportions in typing tests" width="50%"/>
 </div>
 
 
