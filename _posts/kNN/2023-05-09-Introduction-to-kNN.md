@@ -8,36 +8,44 @@ title: Introduction to $k$-NN
 ### **TODO:**
 
 #### Overview
-- [ ] Add an overview
+- [X] Add an overview
 
 #### Uses
-- [ ] Add some use cases for $k$-NN
+~- [ ] Add some use cases for $k$-NN~ *decided to remove this section*
 
 #### The Classification Algorithm
 - [x] Create an example of a $k$-NN problem
 - [x] Type up rough notes describing the code 
-- [ ] Clean up optimal $k$ and alternative method sections
+- [X] Clean up optimal $k$ and alternative method sections
 - [ ] Clean up notes for optimal/alternative approaches for finding $k$
 - [ ] Include `plotly` scatter matrix in this section (maybe)
 
 <br>
 <br>
 
-## **Overview**
+## Overview
 
-## **Uses**
+$k$-NN is a simple yet effective **supervised learning** algorithm that is used for classification and regression tasks. It is a **non-parametric** method, which means it makes predictions based on the similarity of the input data points to their nearest neighbors (nn). 
 
-## **The Classification Algorithm**
+The working principle behind $k$-NN is that similar data points belong to the same class. It assumes that if a particular data point is close to other data points in a feature space, it likely belongs to the same class as those neighbors. 
 
+$k$-NN uses a distance metric to determine the similarity between two data points. There are several, such as Euclidean distance—perhaps the most common—which measures the straight-line distance between two points in a multidimensional space. More information on these distance metrics and their uses is yet to come.
 
-### **Finding Optimal $k$**
+## What is $k$?
 
-*This method involves using **cross-validation** to determine the optimal value of $k$. It involves choosing a fixed value for $k$ and constructing a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) of each feature. Then, we calculate the [various evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html). Doing this for numerous values of $k$, the optimal value will have the minimal amount of false positives and false negatives.*
+As previously mentioned, $k$-NN attempts to find the nearest neighbors of new data points by determining its closeness to other data points. To do this, our model needs to know *how many neighbors* around our data point it should account for. This is $k$.
 
+$k$ is an important parameter that we need to define before we can make predictions. This is where $k$ optimization comes into play. Essentially, we need to find an optimal value for $k$–-one that isn’t too small nor too large. A small value for $k$ will result in the model becoming more sensitive to local variations, while a too large value for $k$ will smooth out the decision boundaries, but it could overlook finer patterns in the data.
 
-### **Alternative Method**
+## Choosing $k$
 
-*This is the method of finding a circle with radius, $r$, which the number of neighbors is determined by counting all data points that exist within that circle. Also, the data point should be put in the center of the cirlcle.*
+### Fixed-Value $k$
+
+*This method involves using **cross-validation** to determine the optimal value of $k$. It involves choosing any integer value for $k$ and constructing a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) of each feature. Then, we calculate the [various evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) from our confusion matrix. We can apply this process for numerous values of $k$, and the optimal value will have the least amount of false positives and false negatives.*
+
+### Alternative Method
+
+*There is another way to implicitly choose a value for $k$. This is the method of finding a circle with radius, $r$, which the number of neighbors is determined by counting all data points that exist within that circle. Also, the data point should be put in the center of the cirlcle.*
 
 ## **Voronoi Diagrams**
 
