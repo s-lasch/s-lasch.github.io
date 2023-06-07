@@ -10,6 +10,9 @@ title: Introduction to $k$-NN
 #### Overview
 - [X] Add an overview
 
+#### Uses
+- [x] ~Add some use cases~ -- *decided to remove section*
+
 #### The Classification Algorithm
 - [x] Create an example of a $k$-NN problem
 - [x] Type up rough notes describing the code 
@@ -20,7 +23,7 @@ title: Introduction to $k$-NN
 <br>
 <br>
 
-## Overview
+## **Overview**
 
 $k$-NN is a simple yet effective **supervised learning** algorithm that is used for classification and regression tasks. It is a **non-parametric** method, which means it makes predictions based on the similarity of the input data points to their nearest neighbors (nn). 
 
@@ -28,19 +31,19 @@ The working principle behind $k$-NN is that similar data points belong to the sa
 
 $k$-NN uses a distance metric to determine the similarity between two data points. There are several, such as Euclidean distance—perhaps the most common—which measures the straight-line distance between two points in a multidimensional space. More information on these distance metrics and their uses is yet to come.
 
-## What is $k$?
+## **What is $k$?**
 
 As previously mentioned, $k$-NN attempts to find the nearest neighbors of new data points by determining its closeness to other data points. To do this, our model needs to know *how many neighbors* around our data point it should account for. This is $k$.
 
-$k$ is an important parameter that we need to define before we can make predictions. This is where $k$ optimization comes into play. Essentially, we need to find an optimal value for $k$–-one that isn’t too small nor too large. A small value for $k$ will result in the model becoming more sensitive to local variations, while a too large value for $k$ will smooth out the decision boundaries, but it could overlook finer patterns in the data.
+$k$ is an important parameter that we need to define before we can make predictions. This is where $k$ optimization comes into play. Essentially, we need to find an optimal value for $k$ ---one that isn’t too small nor too large. A small value for $k$ will result in the model becoming more sensitive to local variations, while a too large value for $k$ will smooth out the decision boundaries, but it could overlook finer patterns in the data.
 
-## Choosing $k$
+## **Choosing $k$**
 
-### Fixed-Value $k$
+### **Fixed-Value $k$**
 
 *This method involves using **cross-validation** to determine the optimal value of $k$. It involves choosing any integer value for $k$ and constructing a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) of each feature. Then, we calculate the [various evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) from our confusion matrix. We can apply this process for numerous values of $k$, and the optimal value will have the least amount of false positives and false negatives.*
 
-### Alternative Method
+### **Alternative Method**
 
 *There is another way to implicitly choose a value for $k$. This is the method of finding a circle with radius, $r$, which the number of neighbors is determined by counting all data points that exist within that circle. Also, the data point should be put in the center of the cirlcle.*
 
