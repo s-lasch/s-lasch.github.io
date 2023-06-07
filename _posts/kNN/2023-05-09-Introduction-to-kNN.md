@@ -3,7 +3,7 @@ tag: $k$-Nearest Neighbors
 title: Introduction to $k$-NN
 ---
 
-> **NOTE:** *all data and figures in this post are made using* `numpy` *and* `matplotlib`*.* 
+> **NOTE:** *all data and figures in this post were made using* `numpy` *and* `matplotlib`*.* 
 
 ### **TODO:**
 
