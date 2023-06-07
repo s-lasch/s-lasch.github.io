@@ -54,7 +54,9 @@ This generates an HTML file that contains the report. Since I cannot show the fu
 
 ## **Basic Data Visualization**
 
-Below is a simple dashboard of the statistics found in the `results.csv` file, located [in my personal repo](https://github.com/s-lasch/typing-tests), which contains the MonkeyType data, a module for plots, as well as a module for automatic data extraction using `selenium`. The plots were created using [plotly.express](https://plotly.com/python/plotly-express/) in Python, and are meant to be interactive. My repo for this data has the dash implementation to create an interactive dashboard. Feel free to clone it and test it out!😄
+Below is a simple dashboard of the statistics found in the `results.csv` file, located [in my personal repo](https://github.com/s-lasch/typing-tests), which contains the MonkeyType data, a module for plots, as well as a module for automatic data extraction using `selenium`. 
+
+The plots were created using [plotly.express](https://plotly.com/python/plotly-express/) in Python, and are meant to be interactive. My repo for this data has the dash implementation to create an interactive dashboard. Feel free to clone it and test it out!😄
 
 <div style="display: flex;">
   <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/3eed19519eb89af909e9da0667e5ac17ca828179/images/language_pie.svg" alt="Displays language proportions in typing tests" width="50%"/>
