@@ -10,9 +10,6 @@ title: Introduction to $k$-NN
 #### Overview
 - [X] Add an overview
 
-#### Uses
-~- [ ] Add some use cases for $k$-NN~ *decided to remove this section*
-
 #### The Classification Algorithm
 - [x] Create an example of a $k$-NN problem
 - [x] Type up rough notes describing the code 
