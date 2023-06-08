@@ -3,6 +3,7 @@ hr {
   margin-bottom: 20px;
 }
 
+/* changes width, margins, and padding of a page */
 .wrapper {
     max-width: -webkit-calc(1000px - (30px * 2));
     max-width: calc(850px - (30px * 2));
@@ -10,6 +11,22 @@ hr {
     margin-left: auto;
     padding-right: 30px;
     padding-left: 30px;
+}
+
+/* post's body css */
+body {
+    font: 400 16px/1.5 -apple-system,BlinkMacSystemFont,"Corbel",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    color: #111;
+    background-color: #fdfdfd;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 /* Post navigation links */
