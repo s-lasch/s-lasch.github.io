@@ -3,6 +3,15 @@ hr {
   margin-bottom: 20px;
 }
 
+.wrapper {
+    max-width: -webkit-calc(1000px - (30px * 2));
+    max-width: calc(850px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
