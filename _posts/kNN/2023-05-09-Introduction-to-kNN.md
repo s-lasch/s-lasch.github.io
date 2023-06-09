@@ -39,14 +39,17 @@ $k$ is an important parameter that we need to define before we can make predicti
 
 ## **Choosing $k$**
 
-### **Fixed-Value $k$**
+### Fixed-Value $k$
 
-*This method involves using **cross-validation** to determine the optimal value of $k$. It involves choosing any integer value for $k$ and constructing a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) of each feature. Then, we calculate the [various evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) from our confusion matrix. We can apply this process for numerous values of $k$, and the optimal value will have the least amount of false positives and false negatives.*
+This method utilizes **cross-validation** to find the optimal value of $k$. By selecting an integer value for $k$, a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) is constructed for each feature, and [evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) are calculated to determine the number of false positives and negatives, as well as true positives and negatives. Iterating this process for different values of $k$ allows us to identify the optimal value.
 
-### **Alternative Method**
+By considering multiple values of $k$ and evaluating their corresponding confusion matrices, we can assess the trade-off between other performance metrics. The goal is to select a value of $k$ that strikes a balance between capturing sufficient local patterns in the data while avoiding overfitting or underfitting.
 
-*There is another way to implicitly choose a value for $k$. This is the method of finding a circle with radius, $r$, which the number of neighbors is determined by counting all data points that exist within that circle. Also, the data point should be put in the center of the cirlcle.*
+### Alternative Method
 
+An alternative method to implicitly select a value for $k$ is by utilizing a circle with a specified radius, $r$. In this approach, the number of neighbors is determined by counting all the data points that fall within the circle. Additionally, the data point of interest is placed at the center of the circle.
+
+By employing this technique, we indirectly establish the number of neighbors based on the density of points within the defined radius. Intuitively, a larger radius will capture a larger density of points for its neighborhood, while a smaller radius includes less points.
 ## **Voronoi Diagrams**
 
 A Voronoi Diagram is
