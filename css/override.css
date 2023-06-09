@@ -5,7 +5,7 @@ hr {
 
 /* changes width, margins, and padding of a page */
 .wrapper {
-    max-width: -webkit-calc(1000px - (30px * 2));
+    max-width: -webkit-calc(850px - (30px * 2));
     max-width: calc(850px - (30px * 2));
     margin-right: auto;
     margin-left: auto;
