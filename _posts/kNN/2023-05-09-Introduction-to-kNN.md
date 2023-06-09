@@ -17,7 +17,7 @@ title: Introduction to $k$-NN
 - [x] Create an example of a $k$-NN problem
 - [x] Type up rough notes describing the code 
 - [X] Clean up optimal $k$ and alternative method sections
-- [ ] Clean up notes for optimal/alternative approaches for finding $k$
+- [X] Clean up notes for optimal/alternative approaches for finding $k$
 - [ ] Include `plotly` scatter matrix in this section (maybe)
 
 <br>
@@ -39,13 +39,13 @@ $k$ is an important parameter that we need to define before we can make predicti
 
 ## **Choosing $k$**
 
-### Fixed-Value $k$
+### **Fixed-Value $k$**
 
-This method utilizes **cross-validation** to find the optimal value of $k$. By selecting an integer value for $k$, a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) is constructed for each feature, and [evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) are calculated to determine the number of false positives and negatives, as well as true positives and negatives. Iterating this process for different values of $k$ allows us to identify the optimal value.
+This method utilizes [**cross-validation**](https://s-lasch.github.io/2023/05/26/k-NN-Classification-with-Cross-Validation.html) to find the optimal value of $k$. By selecting an integer value for $k$, a [confusion matrix](https://s-lasch.github.io/2023/05/22/Confusion-Matrices.html) is constructed for each feature, and [evaluation metrics](https://s-lasch.github.io/2023/05/22/Classification-Evaluation.html) are calculated to determine the number of false positives and negatives, as well as true positives and negatives. Iterating this process for different values of $k$ allows us to identify the optimal value.
 
 By considering multiple values of $k$ and evaluating their corresponding confusion matrices, we can assess the trade-off between other performance metrics. The goal is to select a value of $k$ that strikes a balance between capturing sufficient local patterns in the data while avoiding overfitting or underfitting.
 
-### Alternative Method
+### **Alternative Method**
 
 An alternative method to implicitly select a value for $k$ is by utilizing a circle with a specified radius, $r$. In this approach, the number of neighbors is determined by counting all the data points that fall within the circle. Additionally, the data point of interest is placed at the center of the circle.
 
