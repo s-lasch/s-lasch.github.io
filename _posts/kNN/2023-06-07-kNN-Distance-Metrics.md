@@ -13,7 +13,7 @@ The first—and most common—distance formula is the **Euclidean distance**.
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/euclidean_distance.svg" 
-           alt=""/>
+           width="30%"/>
 <p align="center"><em>Image by author</em></p>
 </p>
 
@@ -27,7 +27,7 @@ Euclidean distance is a straightforward measure of spatial similarity, making it
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/manhattan_distance.svg" 
-           alt=""/>
+           width="30%"/>
 <p align="center"><em>Image by author</em></p>
 </p>
 
@@ -53,7 +53,7 @@ When calculating the similarity or distance between two houses, using the Euclid
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/minkowski_distance.svg" 
-           alt=""/>
+           width="30%"/>
 <p align="center"><em>Image by author</em></p>
 </p>
 
@@ -69,7 +69,7 @@ In general, a higher value of $p$ can give more importance to larger differences
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/cosine_similarity.svg" 
-           alt=""/>
+           width="30%"/>
 <p align="center"><em>Image by author</em></p>
 </p>
 
@@ -79,7 +79,7 @@ In a linear algebra textbook, you might see a similar equation that looks like t
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/lin_alg_cosine_sim.svg" 
-           alt=""/>
+           width="30%"/>
 <p align="center"><em>Image by author</em></p>
 </p>
 
@@ -99,7 +99,7 @@ It is important to remember that the range of cosine is between $-1$ and $1$. A 
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/hamming_distance.svg" 
-           alt=""/>
+           width="30%"/>
 <p align="center"><em>Image by author</em></p>
 </p>
 
