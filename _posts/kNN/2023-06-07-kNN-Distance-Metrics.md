@@ -3,7 +3,7 @@ tag: $k$-Nearest Neighbors
 title: Distance Metrics for $k$-NN
 ---
 
-We use distance formulas in $k$-NN to measure the similarity between points. There are many ways to measure similarity, along with many instances where one formula should be used over another.
+We use distance formulas in $k$-NN  to determine the proximity of data points in order to make predictions or classifications based on the neighbors.. There are many ways to measure similarity, along with many instances where one formula should be used over another.
 
 
 
