@@ -5,7 +5,7 @@ title: Distance Metrics for $k$-NN
 
 > **NOTE:** *all figures in this post were made by the author using* $\LaTeX$, `numpy`, and `matplotlib`
 
-We use distance formulas in $k$-NN  to determine the proximity of data points in order to make predictions or classifications based on the neighbors.. There are many ways to measure similarity, along with many instances where one formula should be used over another.
+We use distance formulas in $k$-NN  to determine the proximity of data points in order to make predictions or classifications based on the neighbors. There are many ways to measure similarity, along with many instances where one formula should be used over another.
 
 <br>
 
