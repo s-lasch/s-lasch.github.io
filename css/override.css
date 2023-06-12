@@ -29,6 +29,15 @@ body {
     flex-direction: column;
 }
 
+/* controls some math text and code text */
+pre, code {
+    font-size: 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #eef;
+    font-style: normal; /* keeps text from being italicized where it shouldn't be */
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
