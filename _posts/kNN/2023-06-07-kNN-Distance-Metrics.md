@@ -83,7 +83,7 @@ In a linear algebra textbook, you might see a similar equation that looks like t
 <p align="center"><em>Image by author</em></p>
 </p>
 
-This is the same formula, where $\vec{x}$ and $\vec{y}$  represent two feature vectors, and $||\vec{x}||$ and $||\vec{y}||$ are the lengths of each vector. This formula measures the similarity of two vectors. Orthogonal vectors, i.e., vectors where $\cos{(\theta)} \approxeq 0$, have *no similarity*, while vectors where $\cos{(\theta)} \approxeq 1$ have the *most similarity*. This can be seen graphically, as below:
+This is the same formula, where $\vec{x}$ and $\vec{y}$  represent two feature vectors, and $\|\|\vec{x}\|\|$ and $\|\|\vec{y}\|\|$ are the lengths of each vector. This formula measures the similarity of two vectors. Orthogonal vectors, i.e., vectors where $\cos{(\theta)} \approxeq 0$, have *no similarity*, while vectors where $\cos{(\theta)} \approxeq 1$ have the *most similarity*. This can be seen graphically, as below:
 
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/cos_similarity_graph.svg" 
