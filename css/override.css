@@ -46,6 +46,7 @@ blockquote {
     font-size: 18px;
     letter-spacing: -1px;
     font-style: normal;
+    margin-left: 20px;
 }
 
 /* Post navigation links */
