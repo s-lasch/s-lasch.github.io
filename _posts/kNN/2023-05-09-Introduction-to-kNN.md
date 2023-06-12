@@ -29,7 +29,7 @@ $k$-NN is a simple yet effective **supervised learning** algorithm that is used 
 
 The working principle behind $k$-NN is that similar data points belong to the same class. It assumes that if a particular data point is close to other data points in a feature space, it likely belongs to the same class as those neighbors. 
 
-$k$-NN uses a distance metric to determine the similarity between two data points. There are several, such as Euclidean distance—perhaps the most common—which measures the straight-line distance between two points in a multidimensional space. More information on these distance metrics and their uses is yet to come.
+$k$-NN uses a distance metric to determine the similarity between two data points. There are several, such as Euclidean distance—perhaps the most common—which measures the straight-line distance between two points in a multidimensional space. Refer to my article on [Distance Metrics](https://s-lasch.github.io/2023/06/07/kNN-Distance-Metrics.html) for $k$-NN.
 
 ## **What is $k$?**
 
