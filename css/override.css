@@ -38,6 +38,16 @@ pre, code {
     font-style: normal; /* keeps text from being italicized where it shouldn't be */
 }
 
+/* modifiies a blockquote area */
+blockquote {
+    color: #828282;
+    border-left: 4px solid #e8e8e8;
+    padding-left: 15px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: normal;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
