@@ -4,6 +4,7 @@ title: Distance Metrics for $k$-NN
 ---
 
 We use distance formulas in $k$-NN  to determine the proximity of data points in order to make predictions or classifications based on the neighbors.. There are many ways to measure similarity, along with many instances where one formula should be used over another.
+> **NOTE:** *all figures in this post were made by the author using* $\LaTeX$, `numpy`, and `matplotlib`
 
 
 
@@ -14,7 +15,6 @@ The first—and most common—distance formula is the **Euclidean distance**.
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/euclidean_distance.svg" 
            width="30%"/>
-<p align="center"><em>Image by author</em></p>
 </p>
 
 This is calculated by finding the difference between elements in list $x$ with elements in list $y$, calculating the sum of those differences, and taking the square root of the sum. This finds the **linear distance** between two points. 
@@ -28,7 +28,6 @@ Euclidean distance is a straightforward measure of spatial similarity, making it
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/manhattan_distance.svg" 
            width="30%"/>
-<p align="center"><em>Image by author</em></p>
 </p>
 
 This distance formula is different from Euclidean distance because it does not measure the magnitude nor the angle of the line connecting two points. In certain instances, knowing the magnitude of the line between two points is necessary in a $k$-NN problem. 
@@ -40,7 +39,6 @@ You can see the difference in Euclidean distance and Manhattan distance more cle
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/euclid_manhat_distance.svg" 
            alt=""/>
-<p align="center"><em>Image by author</em></p>
 </p>
 
 The Manhattan distance can be particularly useful in datasets or scenarios where the features have different units of measurement that are all independent of each other. It captures the total discrepancy along each feature dimension without assuming any specific relationship between them.
@@ -54,7 +52,6 @@ When calculating the similarity or distance between two houses, using the Euclid
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/minkowski_distance.svg" 
            width="30%"/>
-<p align="center"><em>Image by author</em></p>
 </p>
 
 This distance formula is unique in that it includes both Euclidean and Manhattan distances as special cases, when $p=2$ and $p=1$, respectively. Using this distance formula allows us to control a single variable, $p$, to get either formula. 
@@ -70,7 +67,6 @@ In general, a higher value of $p$ can give more importance to larger differences
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/cosine_similarity.svg" 
            width="30%"/>
-<p align="center"><em>Image by author</em></p>
 </p>
 
 If you’ve taken a linear algebra class, you’ve definitely seen this formula before. This equation calculates $\cos{(\theta)}$ , where $\theta$ represents the angle between two non-zero feature vectors. It involves taking the dot product of two vectors in the numerator, then dividing it by the length of each vector.
@@ -80,7 +76,6 @@ In a linear algebra textbook, you might see a similar equation that looks like t
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/lin_alg_cosine_sim.svg" 
            width="30%"/>
-<p align="center"><em>Image by author</em></p>
 </p>
 
 This is the same formula, where $\vec{x}$ and $\vec{y}$  represent two feature vectors, and $\|\|\vec{x}\|\|$ and $\|\|\vec{y}\|\|$ are the lengths of each vector. This formula measures the similarity of two vectors. Orthogonal vectors, i.e., vectors where $\cos{(\theta)} \approxeq 0$, have *no similarity*, while vectors where $\cos{(\theta)} \approxeq 1$ have the *most similarity*. This can be seen graphically, as below:
@@ -88,7 +83,6 @@ This is the same formula, where $\vec{x}$ and $\vec{y}$  represent two feature v
 <p align="center">
       <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/42e13a8de01f261a771012c94bf3af2a1eddec7d/images/cos_similarity_graph.svg" 
            alt=""/>
-<p align="center"><em>Image by author</em></p>
 </p>
 
 It is important to remember that the range of cosine is between $-1$ and $1$. A value of $-1$ indicates exact dissimilarity, $0$ indicates no similarity, and $1$ indicates exact similarity. In this example, the cosine similarity between the two vectors is $-0.7642$, which indicates $\vec{x}$ and $\vec{y}$ are quite dissimilar.
