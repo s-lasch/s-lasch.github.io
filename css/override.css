@@ -38,6 +38,12 @@ pre, code {
     font-style: normal; /* keeps text from being italicized where it shouldn't be */
 }
 
+/* changes the text code block, which represents console output in this blog */
+code.language-text.hljs.language-plaintext {
+    color: #807F80;
+    font-weight: bold;
+}
+
 /* modifiies a blockquote area */
 blockquote {
     color: #828282;
