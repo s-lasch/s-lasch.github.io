@@ -87,6 +87,17 @@ This is the same formula, where $\vec{x}$ and $\vec{y}$  represent two feature v
 
 It is important to remember that the range of cosine is between $-1$ and $1$. A value of $-1$ indicates exact dissimilarity, $0$ indicates no similarity, and $1$ indicates exact similarity. In this example, the cosine similarity between the two vectors is $-0.7642$, which indicates $\vec{x}$ and $\vec{y}$ are quite dissimilar.
 
+You can see the differences in each cosine similarity value below. In the first one, since the two vectors are perpendicular (or orthogonal if you know your linear algebra) they are the least similar. As 2D vectors, the components in both dimensions are maximally different, with correlating dimensions having opposite signs.
+
+In the middle graph, since the two vectors are multiples of each other, and they have the same direction, they fall on the same line in 2D space. This means they are essentially the same vector, just with a different magnitude. 
+
+This is apparent because we have $2\vec{x} = \vec{y}$ in the middle graph. Finally, in the third graph, these two vectors are as dissimilar as they can get, with a similarity of $-1$. Like in the middle graph, these vectors are indeed multiples of each other since we have $-1\vec{x} = \vec{y}$. The key difference is that the negative magnitude changes the direction of $\vec{y}$. 
+
+<p align="center">
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/400b96feab4d6b78300f9e11f6f3245c68c05e98/images/all_cos_sims.svg" 
+           alt=""/>
+</p>
+
 <br>
 
 ### **Hamming Distance** 
