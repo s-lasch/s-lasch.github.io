@@ -94,7 +94,7 @@ In the middle graph, since the two vectors are multiples of each other, and they
 This is apparent because we have $2\vec{x} = \vec{y}$ in the middle graph. Finally, in the third graph, these two vectors are as dissimilar as they can get, with a similarity of $-1$. Like in the middle graph, these vectors are indeed multiples of each other since we have $-1\vec{x} = \vec{y}$. The key difference is that the negative magnitude changes the direction of $\vec{y}$. 
 
 <p align="center">
-      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/400b96feab4d6b78300f9e11f6f3245c68c05e98/images/all_cos_sims.svg" 
+      <img src="https://raw.githubusercontent.com/s-lasch/s-lasch.github.io/fe336c61d5a0494dea1048e458d4d1c2b9c2eb3c/images/all_cos_sims.svg" 
            alt=""/>
 </p>
 
