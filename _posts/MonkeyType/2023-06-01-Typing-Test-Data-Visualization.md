@@ -58,6 +58,8 @@ This generates an HTML file that contains the report. Here is the report that it
     style="width: 100%; height: 800px; border: none;"
   ></iframe>
 
+  <br>
+
 ## **Basic Data Visualization**
 
 Below is a simple dashboard of the statistics found in the `results.csv` file, located [in my personal repo](https://github.com/s-lasch/typing-tests), which contains the MonkeyType data, a module for plots, as well as a module for automatic data extraction using `selenium`. 
