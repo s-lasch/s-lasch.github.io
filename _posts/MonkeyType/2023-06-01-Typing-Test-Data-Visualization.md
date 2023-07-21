@@ -50,7 +50,13 @@ from pandas_profiling import ProfileReport
 ProfileReport(df, title="MonkeyType Report").to_notebook_iframe()
 ```
 
-This generates an HTML file that contains the report. Since I cannot show the full file as a part of this page, navigate to [this link](https://github.com/s-lasch/s-lasch.github.io/blob/main/_posts/MonkeyType/monkey_type_report.html) to download the file, and open it in Chrome, FireFox, or any other browser to view it.
+This generates an HTML file that contains the report. Here is the report that it generates:
+
+<iframe
+    title="MonkeyType Report"
+    src="https://rawcdn.githack.com/s-lasch/s-lasch.github.io/5ffe0d494eef1bfd5cd8b03efc324448311ccddc/_posts/MonkeyType/monkey_type_report.html"
+    style="width: 100%; height: 800px; border: none;"
+  ></iframe>
 
 ## **Basic Data Visualization**
 
