@@ -10,5 +10,5 @@ Below is a scatter matrix plot showing all combinations of 5 variables, `GOL`, `
   <iframe
     title="Crania Data Visualization"
     src="https://rawcdn.githack.com/s-lasch/s-lasch.github.io/5ac4853d6acfc41a3e45f33062fab314eee8eaf9/_includes/scatter_matrix.html"
-    style="height: 800px; border: none;"
+    style="height: 800px; width:110%; border: none;"
   ></iframe>
